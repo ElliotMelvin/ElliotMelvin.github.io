@@ -7,7 +7,9 @@ h1 {
   width: 500px;
   font-size: 60px;
   font-family: myFirstFont;
-  /* border: 3px solid green */
+  padding-top: 20px;
+  /*border: 3px solid green*/
+
 }
 
 /* ---- Heading 2 ---- */
@@ -40,7 +42,25 @@ h2 {
   /*border: 3px solid green*/
 }
 
+.navbar{
+  background-color: rgba(255, 255, 255, 0.5);
+
+}
+
 /* ---- Image ---- */
+body, html {
+  height: 100%;
+  margin: 0px;
+}
+
+.image {
+  background-image: url(../Photography/assests/images/MountainSmall.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* ---- FONT ---- */
 @font-face {
   font-family: myFirstFont;

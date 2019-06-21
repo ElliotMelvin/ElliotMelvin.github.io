@@ -27,7 +27,7 @@ h2 {
 .headingtext{
 text-align: center;
 position: absolute;
-top: 50%;
+top: 30%;
  bottom: 50%;
  width: 100%;
     /*border: 3px solid green*/
@@ -67,34 +67,37 @@ body, html {
   height: 100%;
 }
 .mySlides {
-  /*background-image: url(../Photography/assests/images/MountainSmall.jpg);*/
-
 height:inherit;
 width:inherit;
-overflow:hidden;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-object-fit: fill;
-  border: 3px solid green
+/*border: 3px solid green*/
+}
+
+.left, .right{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width:40px;
+  font-size: 30px;
 }
 
 .left{
-  color: white;
-  background-color: black;
-  margin: auto;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+
 }
 
 .right{
-  color: white;
-  background-color: black;
-  margin: auto;
+position: absolute;
+right: 10px;
+top: 50%;
+
 }
 .badge{
   color: white;
-  border-radius:50%
-  display:inline-block;
+border: 3px solid green
 }
+
 
 
 /* ---- FONT ---- */

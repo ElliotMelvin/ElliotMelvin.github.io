@@ -45,10 +45,12 @@ h2 {
 .navbar{
   background-color: rgba(255, 255, 255, 0.5);
 padding-bottom: 10px;
+
 }
 
 .topnav a:hover:not(.active) {
  background-color:  rgba(255, 255, 255, 0.5);
+
 }
 
 /* ---- Image ---- */
@@ -60,10 +62,15 @@ body, html {
 .image {
   background-image: url(../Photography/assests/images/MountainSmall.jpg);
   height: 100%;
-  background-position: center;
+  background-attachment: fixed;
+background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
 }
+
+
+
 
 /* ---- FONT ---- */
 @font-face {

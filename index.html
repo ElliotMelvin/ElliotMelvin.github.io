@@ -13,11 +13,11 @@
   <!-- Container-image-slider -->
   <div class='container-image-slider'>
     <!-- image Slider -->
-    <!-- data-play_type="loop" data-interval="3000" data-image_fx="zoompan"-->
-    <div class="ism-slider"  id="my-slider">
+    <!-- data-image_fx="zoompan"-->
+    <div class="ism-slider"  id="my-slider" data-play_type="loop" data-interval="3000">
       <ol>
         <li>
-          <img src="../Photography/assests/images/one.png" class="img-parallax"  >
+          <img src="../Photography/assests/images/one.png" data-speed="-1">
         </li>
         <li>
           <img src="../Photography/assests/images/two.gif">
@@ -30,13 +30,31 @@
     <!-- End of image Slider -->
 
     <!-- Navbar -->
-    <div class="topnav">
-      <a href="../Photography/index.html">Home</a>
-      <a href="../Photography/about/index.html">About</a>
-      <a href="../Photography/photos/index.html">Photos</a>
-      <a href="../Photography/videos/index.html">Videos</a>
-      <a href="../Photography/shop/index.html">Shop</a>
+
+    <div class="nav">
+      <input type="checkbox" id="nav-check">
+      <div class="nav-header">
+        <div class="nav-title">
+          <a href="../Photography/index.html" target="_blank" style="text-decoration: none; color: white;">Elliot Melvin</a>
+        </div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <div class="nav-links">
+        <a href="../Photography/index.html" target="_blank">Home</a>
+        <a href="../Photography/about/index.html" target="_blank">About</a>
+        <a href="../Photography/photos/index.html" target="_blank">Photos</a>
+        <a href="../Photography/videos/index.html" target="_blank">Videos</a>
+        <a href="../Photography/shop/index.html" target="_blank">Shop</a>
+      </div>
     </div>
+
     <!-- End of Navbar -->
 
     <!-- Heading -->

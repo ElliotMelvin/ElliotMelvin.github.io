@@ -149,6 +149,7 @@ html, body {
   padding: 0 7px;
   height: 0;
   overflow: visible;
+
 }
 
 .ism-slider .ism-radios.ism-radios-as-thumbnails {
@@ -385,8 +386,8 @@ p.ism-badge a.ism-link:hover {
   left: 0;
   right: 0;
 }
-/* ---- Nav bar  ---- */
 
+/* ---- Nav bar  ---- */
 
 * {
   box-sizing: border-box;
@@ -429,9 +430,10 @@ color: white;
 
 .nav > .nav-links {
   display: inline;
-  float: right;
   font-size: 18px;
-
+  position: absolute;
+left: 50%;
+transform: translateX(-50%);
 }
 
 .nav > .nav-links > a {

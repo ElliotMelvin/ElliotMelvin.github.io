@@ -209,6 +209,8 @@
     function Y() {
       d("#" + b + " .ism-pause-button").off("click", I);
       d("#" + b + " .ism-pause-button").off("touchstart", I)
+
+
     }
 
     function I(a) {

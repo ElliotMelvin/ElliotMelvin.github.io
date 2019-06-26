@@ -417,6 +417,10 @@ body {
   font-family: 'segoe ui';
 }
 
+.fas{
+color: white; 
+}
+
 .nav-title {
   text-decoration: none;
   color: white;

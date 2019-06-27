@@ -7,6 +7,16 @@
   <link rel="stylesheet" href="my-slider.css" />
   <script src="https://kit.fontawesome.com/7a46ee8431.js"></script>
   <script src="slider.js"></script>
+  <script src="cart.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+  (function(){
+
+    $("#cart").on("click", function() {
+      $(".shopping-cart").fadeToggle( "fast");
+    });
+
+  })();</script>
+
 </head>
 
 <body>
@@ -53,11 +63,24 @@
         <a href="../Photography/photos/index.html"><i class="far fa-images"></i> Photos</a>
         <a href="../Photography/videos/index.html"><i class="fas fa-video"></i> Videos</a>
         <a href="../Photography/shop/index.html"><i class="fas fa-store"></i> Shop</a>
-        <a ><i class="fas fa-shopping-basket"></i> Basket</a>
-      </div>
-    </div>
+        <a href="#" id="cart"><i class="fa fa-shopping-cart cart-icon"></i> Cart</a>
 
-    <!-- End of Navbar -->
+        <!-- Shopping Cart -->
+        <div class="container">
+          <div class="shopping-cart">
+            <div class="shopping-cart-header">
+              <i class="fa fa-shopping-cart cart-icon"></i><span class="badge">0</span>
+
+              <a href="#" class="button">Checkout</a>
+            </div>
+            <!--end shopping-cart -->
+          </div>
+          <!--end container -->
+        </div>
+          <!-- End s -->
+      </div>
+      <!-- End of Navbar -->
+    </div>
 
     <!-- Heading -->
     <div class="headingtext">
@@ -67,8 +90,6 @@
     <!-- End of Heading -->
 
     <!-- END of Container-image-slider -->
-
-
 </body>
 
 </html>

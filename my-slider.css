@@ -1,16 +1,37 @@
-/* ---- Body  ---- */
+/* -------------------------------------------------------- Body  ---- */
 html, body {
   height: 100%;
   margin: 0px;
 }
 
-/* ---- Container-image-slider  ---- */
+/* ------------------------------------------------------- Container-image-slider  ---- */
 .container-image-slider {
   height: 100%;
   width: 100%;
 }
+/* ------------------------------------------------------- Text center  ---- */
+h1,h2{
+  text-align: center;
+  color: white;
+margin: auto;
+text-shadow: 0px 0px 3px #fe0000, -1px -1px #d50d0d, 1px 1px #000;
+}
+h1{
+  font-size: 52px;
+}
+h2{
+  font-size: 32px;
+}
+.headingtext{
+  width: 500px;
+ position: absolute;
+ left: 50%;
+ top: 700%;
+ transform: translate(-50%, -50%);
+}
+}
 
-/* ---- Image Slider  ---- */
+/* ------------------------------------------------------- Image Slider  ---- */
 .ism-slider>ol, .ism-slider>ol>li, .ism-slider>ol>li>img {
   width: 100%;
   list-style: none;
@@ -386,28 +407,8 @@ p.ism-badge a.ism-link:hover {
   height: 100%;
 }
 
-#my-slider li.ism-slide-0 .ism-img {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
 
-#my-slider li.ism-slide-1 .ism-img {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-#my-slider li.ism-slide-2 .ism-img {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-/* ---- Nav bar  ---- */
+/* --------------------------------------------------- Nav bar  ---- */
 * {
   box-sizing: border-box;
 }
@@ -438,10 +439,10 @@ body {
 .nav>.nav-header {
   display: inline;
 }
-
+/* ---- H1  ---- */
 .nav>.nav-header>.nav-title {
   display: inline-block;
-  font-size: 22px;
+  font-size: 28px;
   color: #fff;
   padding: 15px;
 }

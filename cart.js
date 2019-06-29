@@ -3,8 +3,8 @@ $(document).ready(function(){
     $(".shopping-cart").fadeToggle( "fast");
   });
   $('input[type="checkbox"]').on('change', function() {
-    $(this).closest('div').find('.headingtext').toggle(!this.checked);
+    $(this).closest('div').find('.heading-container').toggle(!this.checked);
 
     });
-  
+
 })();

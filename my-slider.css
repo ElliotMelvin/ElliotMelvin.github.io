@@ -2,33 +2,38 @@
 html, body {
   height: 100%;
   margin: 0px;
+  padding: 0;
+  font-family: 'segoe ui';
 }
 
+* {
+  box-sizing: border-box;
+}
 /* ------------------------------------------------------- Container-image-slider  ---- */
 .container-image-slider {
   height: 100%;
   width: 100%;
 }
 /* ------------------------------------------------------- Text center  ---- */
-h1,h2{
-  text-align: center;
-  color: white;
+.heading-container,h1,h2{
 margin: auto;
+
+position: relative;
+  color: white;
 text-shadow: 0px 0px 3px #fe0000, -1px -1px #d50d0d, 1px 1px #000;
 }
 h1{
-  font-size: 52px;
+  font-size: calc(3em + 1vw);
 }
 h2{
-  font-size: 32px;
+font-size: calc(1.5em + 1vw);
 }
-.headingtext{
-  width: 500px;
- position: absolute;
- left: 50%;
- top: 700%;
- transform: translate(-50%, -50%);
-}
+
+.heading-container{
+  width: auto;
+  margin: auto;
+  text-align: center;
+  top: 35vh;
 }
 
 /* ------------------------------------------------------- Image Slider  ---- */
@@ -409,15 +414,6 @@ p.ism-badge a.ism-link:hover {
 
 
 /* --------------------------------------------------- Nav bar  ---- */
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0px;
-  font-family: 'segoe ui';
-}
-
 .fas {
   color: white;
 }

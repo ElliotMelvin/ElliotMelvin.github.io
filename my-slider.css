@@ -9,27 +9,30 @@ html, body {
 * {
   box-sizing: border-box;
 }
+
 /* ------------------------------------------------------- Container-image-slider  ---- */
 .container-image-slider {
   height: 100%;
   width: 100%;
 }
-/* ------------------------------------------------------- Text center  ---- */
-.heading-container,h1,h2{
-margin: auto;
 
-position: relative;
+/* ------------------------------------------------------- Text center  ---- */
+.heading-container, h1, h2 {
+  margin: auto;
+  position: relative;
   color: white;
-text-shadow: 0px 0px 3px #fe0000, -1px -1px #d50d0d, 1px 1px #000;
+  text-shadow: 0px 0px 3px #fe0000, -1px -1px #d50d0d, 1px 1px #000;
 }
-h1{
+
+h1 {
   font-size: calc(3em + 1vw);
 }
-h2{
-font-size: calc(1.5em + 1vw);
+
+h2 {
+  font-size: calc(1.5em + 1vw);
 }
 
-.heading-container{
+.heading-container {
   width: auto;
   margin: auto;
   text-align: center;
@@ -412,7 +415,6 @@ p.ism-badge a.ism-link:hover {
   height: 100%;
 }
 
-
 /* --------------------------------------------------- Nav bar  ---- */
 .fas {
   color: white;
@@ -435,6 +437,7 @@ p.ism-badge a.ism-link:hover {
 .nav>.nav-header {
   display: inline;
 }
+
 /* ---- H1  ---- */
 .nav>.nav-header>.nav-title {
   display: inline-block;
@@ -451,7 +454,7 @@ p.ism-badge a.ism-link:hover {
   display: inline;
   font-size: 22px;
   float: right;
-  padding-right: 80px;
+  /*padding-right: 40px;
   /*  position: absolute;
 left: 60%;
 transform: translateX(-40%);*/
@@ -459,7 +462,7 @@ transform: translateX(-40%);*/
 
 .nav>.nav-links>a {
   display: inline-block;
-  padding: 15px 10px 15px 10px;
+  padding: 19px 10px 15px 10px;
   text-decoration: none;
   color: #efefef;
 }
@@ -472,7 +475,8 @@ transform: translateX(-40%);*/
   display: none;
 }
 
-@media (max-width:700px) {
+/* ---- MEDIA QUERY ---- */
+@media (max-width:850px) {
   .nav>.nav-links {
     float: right;
   }
@@ -552,10 +556,12 @@ transform: translateX(-40%);*/
   border-radius: 3px;
   padding: 20px;
 }
+
 .shopping-cart .shopping-cart-header {
   border-bottom: 1px solid #E8E8E8;
   padding-bottom: 15px;
 }
+
 .shopping-cart:after {
   bottom: 100%;
   left: 89%;
@@ -581,6 +587,7 @@ transform: translateX(-40%);*/
   font-size: 16px;
   margin: 25px 0 15px 0;
 }
-.fa{
+
+.fa {
   color: white;
 }

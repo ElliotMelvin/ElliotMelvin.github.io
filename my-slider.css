@@ -3,7 +3,13 @@ html, body {
   height: 100%;
   margin: 0px;
   padding: 0;
-  font-family: 'segoe ui';
+  font-family: bodyfont;
+  /* font-family: 'segoe ui'; */
+}
+@font-face {
+  font-family: bodyfont;
+  /*src: url(../Photography/assests/fonts/LemonMilklight.otf);*/
+  src: url(../Photography/assests/fonts/LemonMilkitalic.otf);
 }
 
 * {

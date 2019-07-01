@@ -17,26 +17,26 @@ html, body {
 }
 
 /* ------------------------------------------------------- Text center  ---- */
+h1 {
+  font-size: calc(2em + 1vw);
+}
+
+h2 {
+  font-size: calc(1.2em + 1vw);
+}
+
 .heading-container, h1, h2 {
   margin: auto;
   position: relative;
   color: white;
   text-shadow: 0px 0px 3px #fe0000, -1px -1px #d50d0d, 1px 1px #000;
 }
-
-h1 {
-  font-size: calc(3em + 1vw);
-}
-
-h2 {
-  font-size: calc(1.5em + 1vw);
-}
-
 .heading-container {
   width: auto;
   margin: auto;
   text-align: center;
-  top: 35vh;
+  top: 38vh;
+  pointer-events: none;
 }
 
 /* ------------------------------------------------------- Image Slider  ---- */
@@ -454,15 +454,12 @@ p.ism-badge a.ism-link:hover {
   display: inline;
   font-size: 22px;
   float: right;
-  /*padding-right: 40px;
-  /*  position: absolute;
-left: 60%;
-transform: translateX(-40%);*/
+
 }
 
 .nav>.nav-links>a {
   display: inline-block;
-  padding: 19px 10px 15px 10px;
+  padding: 15px 10px 15px 10px;
   text-decoration: none;
   color: #efefef;
 }
@@ -535,7 +532,7 @@ transform: translateX(-40%);*/
 
 /* ---- Basket on Nav Bar ---- */
 .container{
-  
+
 }
 .badge {
   background-color: white;

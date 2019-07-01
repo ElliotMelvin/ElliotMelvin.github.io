@@ -1,4 +1,3 @@
-
 (function() {
   function e(b, c) {
     this.selector = null;
@@ -1020,9 +1019,16 @@
   return d
 });
 
-$(document).ready(function(){
-$('input[type="checkbox"]').on('change', function() {
-  $(this).closest('div').find('.heading-container').toggle(!this.checked);
+// hide text when checkbox is ticked
+$(document).ready(function() {
+  $('input[type="checkbox"]').click(function () {
+          if ($(this).is(":checked")) {
+              $(".heading-container").hide();
+          } else {
+              $(".heading-container").show();
+          }
+
 
   });
+
 })();

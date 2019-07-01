@@ -1019,3 +1019,10 @@
   }, x = clearTimeout);
   return d
 });
+
+$(document).ready(function(){
+$('input[type="checkbox"]').on('change', function() {
+  $(this).closest('div').find('.heading-container').toggle(!this.checked);
+
+  });
+})();

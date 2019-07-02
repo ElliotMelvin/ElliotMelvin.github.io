@@ -1027,8 +1027,8 @@ $(document).ready(function() {
           } else {
               $(".heading-container").show();
           }
-
-
   });
+
+
 
 })();

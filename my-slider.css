@@ -593,14 +593,7 @@ h3{
       color: white;
       margin: 0;
 }
-hr {
-  display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid white;
-    margin: auto;
-    padding: 0;
-}
+
 .container-all{
   width: fit-content;
   margin: 20px auto;
@@ -756,59 +749,60 @@ img{
 	}
 }
 /* arrow down */
-
-
-.load-more {
-	position: absolute;
-	display: block;
-	cursor: pointer;
-  width: 40px; height: 40px;
-  top: 50%; left: 50%;
-  margin: -20px 0 0 -20px;
-  z-index: 6;
+.arrow-container {
+  display: block;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 88%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateZ(0deg);
+  z-index: 5;
 }
-	.load-more:before,
-	.load-more:after {
-		position: absolute;
-		display: block;
-		content: '';
-		width: 30px; height: 30px;
-		left: 50%; top: 50%;
-		margin-top: -15px;
-		border-width: 2px;
-		border-style: solid;
-		border-color: transparent;
-		border-bottom-color: #fff;
-		border-right-color: #fff;
-		border-radius: 0 0 5px 0;
 
-		transform: translate(-50%, -50%) rotate(45deg);
+.arrow-container:hover {
+  cursor: pointer;
+}
+.arrow-container:hover .arrow {
+  top: 50%;
+}
+.arrow-container:hover .arrow:before {
+  transform: translate(-50%, -50%) rotateZ(-30deg);
+}
+.arrow-container:hover .arrow:after {
+  transform: translate(-50%, -50%) rotateZ(30deg);
+}
 
-		transition: all .4s ease-in-out;
-	}
-	.load-more.active:before {
-		border-radius: 50%;
-		animation:
-			.8s rotate .4s linear forwards infinite;
-	}
-	.load-more.active:after {
-		width: 38px; height: 38px;
-		border-radius: 50%;
-		animation:
-			.8s rotate2 .4s linear forwards infinite;
-	}
-		@keyframes rotate {
-			to {
-				transform: translate(-50%, -50%) rotate(405deg);
-			}
-		}
-		@keyframes rotate2 {
-			to {
-				transform: translate(-50%, -50%) rotate(-315deg);
-			}
-		}
-	.load-more.disabled:before,
-	.load-more.disabled:after {
-    margin-top: 0;
-		transform: translate(-50%, -50%) rotate(135deg) rotateY(180deg);
-	}
+.arrow {
+  position: absolute;
+  left: 50%;
+  transition: all .4s ease;
+}
+.arrow:before, .arrow:after {
+  transition: all .4s ease;
+  content: '';
+  display: block;
+  position: absolute;
+  transform-origin: bottom right;
+  background: #fff;
+  width: 5px;
+  height: 40px;
+  border-radius: 10px;
+  transform: translate(-50%, -50%) rotateZ(-45deg);
+}
+.arrow:after {
+  transform-origin: bottom left;
+  transform: translate(-50%, -50%) rotateZ(45deg);
+}
+.arrow:nth-child(1) {
+  opacity: 0.3;
+  top: 35%;
+}
+.arrow:nth-child(2) {
+  opacity: 0.6;
+  top: 55%;
+}
+.arrow:nth-child(3) {
+  opacity: 0.9;
+  top: 75%;
+}

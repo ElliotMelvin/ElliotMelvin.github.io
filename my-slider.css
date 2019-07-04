@@ -136,13 +136,18 @@ html, body {
 /* -----------------  Scroll down -----------------*/
 .arrow-container {
   display: block;
-  width: 100px;
+  width: 5px;
   height: 80px;
   position: absolute;
   top: 86%;
   left: 50%;
   transform: translate(-50%, -50%) rotateZ(0deg);
   z-index: 5;
+  animation: bounce 3s infinite;
+-webkit-animation: bounce 3s infinite;
+-moz-animation: bounce 3s infinite;
+-o-animation: bounce 3s infinite;
+
 }
 
 .arrow-container:hover {
@@ -199,6 +204,29 @@ html, body {
   opacity: 0.9;
   top: 75%;
 }
+@-webkit-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+ 40% {-webkit-transform: translateY(-30px);}
+ 60% {-webkit-transform: translateY(-15px);}
+}
+
+@-moz-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+ 40% {-moz-transform: translateY(-30px);}
+ 60% {-moz-transform: translateY(-15px);}
+}
+
+@-o-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+ 40% {-o-transform: translateY(-30px);}
+ 60% {-o-transform: translateY(-15px);}
+}
+@keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+ 40% {transform: translateY(-30px);}
+ 60% {transform: translateY(-15px);}
+}
+
 
 @media (max-width: 600px) {
   .arrow:before, .arrow:after {
@@ -208,7 +236,10 @@ html, body {
   .arrow-container {
     top: 85%;
   }
+
 }
+
+
 /* -----------------  End of scroll down -----------------*/
 
 /* ----------------- Center text  ----------------- */
@@ -719,7 +750,7 @@ img {
   height: auto;
   background: url(../ElliotMelvin.github.io/assests/images/cork.jpg);
   text-align: center;
-  padding: 60px;
+  padding: 20px;
   background-attachment: fixed;
   background-position: center;
 }
@@ -813,8 +844,8 @@ img {
   box-sizing: border-box;
   width: 100%;
   text-align: left;
-  font: normal 16px sans-serif;
-  padding: 45px 50px;
+font-size: 22px;
+  padding: 35px 50px;
 }
 
 .footer-distributed .footer-left p {
@@ -825,7 +856,7 @@ img {
 
 /* Footer links */
 .footer-distributed p.footer-links {
-  font-size: 18px;
+
   font-weight: bold;
   color: #ffffff;
   margin: 0 0 10px;
@@ -843,6 +874,7 @@ img {
   float: right;
   margin-top: 6px;
   max-width: 180px;
+  padding: 20px;
 }
 
 .footer-distributed .footer-right a {
@@ -875,3 +907,38 @@ img {
   }
 }
 /* -----------------  End of footer -----------------*/
+
+/* -----------------  Return to top -----------------*/
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 8px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: black; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 24px; /* Increase font size */
+  width: 60px;
+  border-radius: 50%;
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+@media (max-width: 600px) {
+#myBtn{
+  width: 50px;
+  height: 50px;
+  padding: 0;
+}
+
+}
+
+/* -----------------  End of Return to top -----------------*/

@@ -1029,6 +1029,7 @@ $(document).ready(function() {
           }
   });
 
+// scroll down button
   $("a[href^='#']").click(function(e) {
   	e.preventDefault();
 
@@ -1053,5 +1054,12 @@ $(document).ready(function() {
       }, 500);
   });
 
+ // rotatein on arrow up
+      $('.fa-chevron-up').hover(function(){
+          $(this).addClass('animated rotateIn');
+  });
 
+  $(document).ready(function(){
+      $(this).scrollTop(0);
+  });
 })();

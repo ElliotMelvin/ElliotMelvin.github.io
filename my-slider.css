@@ -13,9 +13,6 @@ html, body {
   src: url(../ElliotMelvin.github.io/assests/fonts/LemonMilkitalic.otf);
 }
 
-* {
-  box-sizing: border-box;
-}
 /* -----------------  End of Body -----------------*/
 
 /* -----------------  Navbar -----------------*/
@@ -75,7 +72,7 @@ html, body {
 }
 
 /* ---- MEDIA QUERY ---- */
-@media (max-width:850px) {
+@media (max-width:905px) {
   .nav>.nav-links {
     float: right;
   }
@@ -92,6 +89,7 @@ html, body {
     width: 60px;
     height: 60px;
     padding: 18px;
+    box-sizing: border-box;
   }
 
   .nav>.nav-btn>label:hover, .nav #nav-check:checked~.nav-btn>label {
@@ -626,10 +624,10 @@ p.ism-badge a.ism-link:hover {
 h3 {
   text-align: center;
   padding: 70px;
-  font-size: calc(0.7em + 1vw);
-  /*text-shadow: 0px 0px 3px #fe0000, -1px -1px #d50d0d, 1px 1px #000;*/
+  font-size: calc(1em + 0.6vw);
   color: white;
   margin: 0;
+padding-bottom: 20px
 }
 
 .container-all {
@@ -639,17 +637,18 @@ h3 {
   background: #193f779c;
   margin: 0;
   overflow: hidden;
-  padding-bottom: 70px;
+  padding-bottom: 50px;
+  text-align: center;
+
 }
 
 .container {
-  width: calc(33.3% - 1px);
+  width: 31%;
   overflow: hidden;
   height: fit-content;
   padding: 3px;
-  display: block;
+  display: inline-block;
   position: relative;
-  float: left;
 }
 
 img {
@@ -704,22 +703,28 @@ img {
   transition-duration: .3s;
 }
 
-@media only screen and (max-width: 900px) {
-  .container {
-    width: calc(50% - 6px);
-  }
+@media only screen and (max-width: 700px) {
+.container{
+  width: 46%;
+overflow: hidden;
+}
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   .container {
     width: 100%;
+    overflow: hidden;
+  }
+
+  .container-all{
+      padding: 15px;
   }
 }
 /* -----------------  End of image gallery -----------------*/
 
 /* ----------------- Page links container -----------------*/
 .links-container {
-  width: 100%;
+  width: aut0;
   height: auto;
   background: url(../ElliotMelvin.github.io/assests/images/cork.jpg);
   text-align: center;
@@ -800,7 +805,7 @@ img {
   transition-duration: 0.4s;
   cursor: pointer;
   float: left;
-  margin-left: 22px;
+
 }
 
 .button1 {
@@ -830,17 +835,19 @@ object-fit: contain;
 
 .box2-right p {
   font-size: 20px;
-  padding: 10px;
   margin-top: 20px;
 text-decoration: none;
-margin-left: -20px;
+text-align: left;
+padding: 0;
+font-size: calc(1em + 0.1vw);
 }
 
 .box2-right h1{
   font-size: 20px;
   color: white;
   text-shadow: none;
-margin-left: 26px;
+text-align: left;
+padding-top: 15px;
 }
 
 .box2-right {
@@ -859,7 +866,9 @@ margin-left: 26px;
   padding-top: 25px;
 }
 
-
+.box1-left{
+  margin: 0;
+}
 
 }
 

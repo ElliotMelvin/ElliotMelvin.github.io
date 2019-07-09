@@ -1062,4 +1062,16 @@ $(document).ready(function() {
   $(document).ready(function(){
       $(this).scrollTop(0);
   });
+
+  $(document).ready(function(){
+
+    // hide our element on page load
+    $('#animation').css('opacity', 0);
+
+    $('#animation').waypoint(function() {
+        $('#animation').addClass('animated fadeInLeft');
+    }, { offset: '50%' });
+
+  });
+
 })();

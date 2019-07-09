@@ -263,7 +263,7 @@ h2 {
   user-select: none;
   cursor: default;
   z-index: 2;
-  background-color: #193f779c;
+  background-color: #202a38b5;
   -webkit-animation: ism-fadein 3s;
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
@@ -625,16 +625,18 @@ h3 {
   text-align: center;
   padding: 70px;
   font-size: calc(1em + 0.6vw);
-  color: white;
   margin: 0;
-padding-bottom: 20px
+padding-bottom: 20px;
+color: white;
+
+
 }
 
 .container-all {
   width: fit-content;
   margin: 20px auto;
   height: auto;
-  background: #193f779c;
+  background: #202a38b5;
   margin: 0;
   overflow: hidden;
   padding-bottom: 50px;
@@ -777,7 +779,7 @@ overflow: hidden;
 .social-media-container {
   width: auto;
   height: auto;
-  background: #193f779c;
+  background: #202a38b5;
   text-align: center;
   padding-bottom: 50px;
 }

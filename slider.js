@@ -1059,6 +1059,7 @@ $(document).ready(function() {
           $(this).addClass('animated rotateIn');
   });
 
+// when page is reloaded it will take user to the top
   $(document).ready(function(){
       $(this).scrollTop(0);
   });
@@ -1070,12 +1071,14 @@ $(document).ready(function() {
 
     $('#animation').waypoint(function() {
         $('#animation').addClass('animated fadeInLeft');
-    }, { offset: '50%' });
+    }, { offset: '0%' });
 
   });
 
+  $(document).ready(function(){
   $(".arrow-container").hover(function(){
       $(".animated").css("animation-play-state", "paused");
+        });
   });
 
 

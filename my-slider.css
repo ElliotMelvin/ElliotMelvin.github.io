@@ -152,13 +152,12 @@ html {
 .arrow-container {
   display: block;
   width: 50px;
-  height: 80px;
+  height: 70px;
   position: absolute;
-  top: 86%;
+  top: 90%;
   left: 50%;
   transform: translate(-50%, -50%) rotateZ(0deg);
-  z-index: 5;
-  visibility: hidden;
+  z-index: 5
 }
 
 .arrow-container:hover {
@@ -504,10 +503,6 @@ p.ism-badge a.ism-link:hover {
 }
 
 /* SLIDER */
-#hide:hover .arrow{
-  visibility: visible;
-}
-
 #my-slider {
   width: 100%;
   border-radius: 0;

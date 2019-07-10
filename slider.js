@@ -1075,10 +1075,9 @@ $(document).ready(function() {
   });
 
   $(".arrow-container").hover(function(){
-
       $(".animated").css("animation-play-state", "paused");
-
   });
+
 
 
 

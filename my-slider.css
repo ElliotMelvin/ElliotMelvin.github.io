@@ -4,64 +4,34 @@ html, body {
   margin: 0px;
   padding: 0;
   font-family: bodyfont;
-
-  /* font-family: 'segoe ui'; */
 }
 
 @font-face {
   font-family: bodyfont;
-  /*src: url(../Photography/assests/fonts/LemonMilklight.otf);*/
   src: url(../ElliotMelvin.github.io/assests/fonts/LemonMilkitalic.otf);
 }
 
 html {
-    overflow: scroll;
-    overflow-x: hidden;
-     scrollbar-width: none;  // Firefox
-      -ms-overflow-style: none;
+  overflow: scroll;
+  overflow-x: hidden;
+  scrollbar-width: none; // Firefox
+  -ms-overflow-style: none;
 }
+
 ::-webkit-scrollbar {
-    width: 0px;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
+  width: 0px;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
 }
+
 
 /* -----------------  End of Body -----------------*/
-
 /* -----------------  Scrollbar -----------------*/
 
-/* width */
-::-webkit-scrollbar {
-  background-color:#fff;
-  width:16px
-}
 
-/* Track */
-::-webkit-scrollbar-track {
-display: none;
 
-}
-
-::-webkit-scrollbar-track:hover{
-  background-color:#f4f4f4
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background-color:#babac0;
-      border-radius:16px;
-      border:5px solid #fff
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background-color:#a0a0a5;
-      border:4px solid #f4f4f4
-}
-::-webkit-scrollbar-button{
-  display: none;
-}
 /* ----------------- End of Scrollbar -----------------*/
-
 /* -----------------  Navbar -----------------*/
 .fas {
   color: white;
@@ -176,8 +146,8 @@ display: none;
     overflow-y: auto;
   }
 }
-/* -----------------  End of navbar -----------------*/
 
+/* -----------------  End of navbar -----------------*/
 /* -----------------  Scroll down -----------------*/
 .arrow-container {
   display: block;
@@ -188,6 +158,7 @@ display: none;
   left: 50%;
   transform: translate(-50%, -50%) rotateZ(0deg);
   z-index: 5;
+  visibility: hidden;
 }
 
 .arrow-container:hover {
@@ -244,6 +215,7 @@ display: none;
   opacity: 0.9;
   top: 75%;
 }
+
 @media (max-width: 600px) {
   .arrow:before, .arrow:after {
     height: 30px;
@@ -252,12 +224,9 @@ display: none;
   .arrow-container {
     top: 85%;
   }
-
 }
 
-
 /* -----------------  End of scroll down -----------------*/
-
 /* ----------------- Center text  ----------------- */
 .container-image-slider {
   height: 100%;
@@ -287,8 +256,8 @@ h2 {
   pointer-events: none;
   z-index: 5;
 }
-/* -----------------  End of center text  -----------------*/
 
+/* -----------------  End of center text  -----------------*/
 /* -----------------  Image slider -----------------*/
 .ism-slider>ol, .ism-slider>ol>li, .ism-slider>ol>li>img {
   width: 100%;
@@ -535,6 +504,10 @@ p.ism-badge a.ism-link:hover {
 }
 
 /* SLIDER */
+#hide:hover .arrow{
+  visibility: visible;
+}
+
 #my-slider {
   width: 100%;
   border-radius: 0;
@@ -663,18 +636,16 @@ p.ism-badge a.ism-link:hover {
   width: 100%;
   height: 100%;
 }
-/* -----------------  End of image slider -----------------*/
 
+/* -----------------  End of image slider -----------------*/
 /* -----------------  Image gallery -----------------*/
 h3 {
   text-align: center;
   padding: 70px;
   font-size: calc(1em + 0.6vw);
   margin: 0;
-padding-bottom: 20px;
-color: white;
-
-
+  padding-bottom: 20px;
+  color: white;
 }
 
 .container-all {
@@ -686,7 +657,6 @@ color: white;
   overflow: hidden;
   padding-bottom: 50px;
   text-align: center;
-
 }
 
 .container {
@@ -752,10 +722,10 @@ img {
 }
 
 @media only screen and (max-width: 700px) {
-.container{
-  width: 46%;
-overflow: hidden;
-}
+  .container {
+    width: 46%;
+    overflow: hidden;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -764,12 +734,12 @@ overflow: hidden;
     overflow: hidden;
   }
 
-  .container-all{
-      padding: 15px;
+  .container-all {
+    padding: 15px;
   }
 }
-/* -----------------  End of image gallery -----------------*/
 
+/* -----------------  End of image gallery -----------------*/
 /* ----------------- Page links container -----------------*/
 .links-container {
   width: aut0;
@@ -779,7 +749,6 @@ overflow: hidden;
   padding: 20px;
   background-attachment: fixed;
   background-position: center;
-
 }
 
 .links-container a {
@@ -819,8 +788,8 @@ overflow: hidden;
   margin-left: 75px;
   margin-right: 75px
 }
-/* -----------------  End of page links -----------------*/
 
+/* -----------------  End of page links -----------------*/
 /* -----------------  Social media -----------------*/
 .social-media-container {
   width: auto;
@@ -853,7 +822,6 @@ overflow: hidden;
   transition-duration: 0.4s;
   cursor: pointer;
   float: left;
-
 }
 
 .button1 {
@@ -868,7 +836,7 @@ overflow: hidden;
   color: white;
 }
 
-.box1-left{
+.box1-left {
   width: auto;
   height: 400px;
   /*border: 1px solid red;*/
@@ -876,52 +844,48 @@ overflow: hidden;
   margin-right: 30px;
 }
 
-.box1-left img{
+.box1-left img {
   height: 400px;
-object-fit: contain;
+  object-fit: contain;
 }
 
 .box2-right p {
   font-size: 20px;
   margin-top: 20px;
-text-decoration: none;
-text-align: left;
-padding: 0;
-font-size: calc(1em + 0.1vw);
+  text-decoration: none;
+  text-align: left;
+  padding: 0;
+  font-size: calc(1em + 0.1vw);
 }
 
-.box2-right h1{
+.box2-right h1 {
   font-size: 20px;
   color: white;
   text-shadow: none;
-text-align: left;
-padding-top: 15px;
+  text-align: left;
+  padding-top: 15px;
 }
 
 .box2-right {
-/*border: 1px solid red;*/
+  /*border: 1px solid red;*/
   display: inline-block;
   width: auto;
   height: auto;
-  vertical-align:top;
-
+  vertical-align: top;
 }
 
 @media (max-width: 700px) {
+  .box2-right {
+    width: 75%;
+    padding-top: 25px;
+  }
 
-.box2-right{
-  width: 75%;
-  padding-top: 25px;
-}
-
-.box1-left{
-  margin: 0;
-}
-
+  .box1-left {
+    margin: 0;
+  }
 }
 
 /* -----------------  End of social media -----------------*/
-
 /* -----------------  Footer -----------------*/
 .footer-distributed {
   background-color: #292c2f;
@@ -929,7 +893,7 @@ padding-top: 15px;
   box-sizing: border-box;
   width: 100%;
   text-align: left;
-font-size: 22px;
+  font-size: 22px;
   padding: 35px 50px;
 }
 
@@ -941,7 +905,6 @@ font-size: 22px;
 
 /* Footer links */
 .footer-distributed p.footer-links {
-
   font-weight: bold;
   color: #ffffff;
   margin: 0 0 10px;
@@ -991,38 +954,50 @@ font-size: 22px;
     line-height: 1.8;
   }
 }
+
 /* -----------------  End of footer -----------------*/
-
 /* -----------------  Return to top -----------------*/
-
 #myBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 8px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: rgba(255, 255, 255, 0.5); /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 24px; /* Increase font size */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 8px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: rgba(255, 255, 255, 0.5);
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  border-radius: 10px;
+  /* Rounded corners */
+  font-size: 24px;
+  /* Increase font size */
   width: 50px;
   border-radius: 50%;
   height: 50px;
 }
 
 #myBtn:hover {
-  background-color: rgba(0, 0, 0, 0.7); /* Add a dark-grey background on hover */
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Add a dark-grey background on hover */
 }
 
 @media (max-width: 600px) {
-#myBtn{
-  width: 50px;
-  height: 50px;
-  padding: 0;
-}
+  #myBtn {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+  }
 }
 
 /* -----------------  End of Return to top -----------------*/

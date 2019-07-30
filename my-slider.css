@@ -273,7 +273,7 @@ h2 {
   user-select: none;
   cursor: default;
   z-index: 2;
-  background-color: #202a38b5;
+  background-color: #333333;
   -webkit-animation: ism-fadein 3s;
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
@@ -460,44 +460,6 @@ p.ism-badge a.ism-link:hover {
   text-decoration: underline;
 }
 
-.ism-zoom-pan {
-  -webkit-animation: zoompan 20.0s linear 1;
-  animation: zoompan 20.0s linear 1;
-}
-
-@-webkit-keyframes zoompan {
-  0% {
-    -webkit-transform: translate(0, 0) scale(1.0);
-    transform: translate(0, 0) scale(1.0);
-  }
-
-  50% {
-    -webkit-transform: translate(-5%, -5%) scale(1.3);
-    transform: translate(-5%, -5%) scale(1.3);
-  }
-
-  100% {
-    -webkit-transform: translate(0, 0) scale(1.0);
-    transform: translate(0, 0) scale(1.0);
-  }
-}
-
-@keyframes zoompan {
-  0% {
-    -webkit-transform: translate(0, 0) scale(1.0);
-    transform: translate(0, 0) scale(1.0);
-  }
-
-  50% {
-    -webkit-transform: translate(-5%, -5%) scale(1.3);
-    transform: translate(-5%, -5%) scale(1.3);
-  }
-
-  100% {
-    -webkit-transform: translate(0, 0) scale(1.0);
-    transform: translate(0, 0) scale(1.0);
-  }
-}
 
 /* SLIDER */
 #my-slider {
@@ -644,7 +606,7 @@ h3 {
   width: fit-content;
   margin: 20px auto;
   height: auto;
-  background: #202a38b5;
+  background: #333333;
   margin: 0;
   overflow: hidden;
   padding-bottom: 50px;
@@ -737,7 +699,7 @@ img {
 .social-media-container {
   width: auto;
   height: auto;
-  background: #202a38b5;
+  background: #333333;
   text-align: center;
   padding-bottom: 50px;
 }

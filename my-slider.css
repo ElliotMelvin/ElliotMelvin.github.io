@@ -1,4 +1,9 @@
 /* -----------------  Body -----------------*/
+@font-face {
+  font-family: bodyfont;
+  src: url(../ElliotMelvin.github.io/assests/fonts/LemonMilkitalic.otf);
+}
+
 html, body {
   height: 100%;
   margin: 0px;
@@ -6,10 +11,6 @@ html, body {
   font-family: bodyfont;
 }
 
-@font-face {
-  font-family: bodyfont;
-  src: url(../ElliotMelvin.github.io/assests/fonts/LemonMilkitalic.otf);
-}
 
 html {
   overflow: scroll;
@@ -27,11 +28,7 @@ html {
 
 
 /* -----------------  End of Body -----------------*/
-/* -----------------  Scrollbar -----------------*/
 
-
-
-/* ----------------- End of Scrollbar -----------------*/
 /* -----------------  Navbar -----------------*/
 .fas {
   color: white;
@@ -735,56 +732,7 @@ img {
 }
 
 /* -----------------  End of image gallery -----------------*/
-/* ----------------- Page links container -----------------*/
-.links-container {
-  width: aut0;
-  height: auto;
-  background: url(../ElliotMelvin.github.io/assests/images/cork.jpg);
-  text-align: center;
-  padding: 20px;
-  background-attachment: fixed;
-  background-position: center;
-}
 
-.links-container a {
-  font-size: 110px;
-  text-decoration: none;
-  color: white;
-}
-
-.links-container p {
-  color: white;
-  font-size: 22px;
-  margin: 0
-}
-
-.left {
-  width: auto;
-  /* border: 1px solid red; */
-  display: inline-block;
-  margin: 25px;
-  margin-left: 75px;
-  margin-right: 75px;
-}
-
-.middle {
-  width: auto;
-  display: inline-block;
-  margin: 25px;
-  margin-left: 75px;
-  margin-right: 75px;
-}
-
-.right {
-  width: auto;
-  /* border: 1px solid red; */
-  display: inline-block;
-  margin: 25px;
-  margin-left: 75px;
-  margin-right: 75px
-}
-
-/* -----------------  End of page links -----------------*/
 /* -----------------  Social media -----------------*/
 .social-media-container {
   width: auto;

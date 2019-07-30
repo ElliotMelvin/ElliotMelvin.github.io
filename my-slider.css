@@ -56,7 +56,7 @@ html {
 .nav>.nav-header>.nav-title {
   display: inline-block;
   font-size: 28px;
-  color: #fff;
+  color: #dba63c;
   padding: 15px;
 }
 
@@ -599,7 +599,7 @@ h3 {
   font-size: calc(1em + 0.6vw);
   margin: 0;
   padding-bottom: 20px;
-  color: white;
+  color: #dba63c;
 }
 
 .container-all {
@@ -765,7 +765,7 @@ img {
 
 .box2-right h1 {
   font-size: 20px;
-  color: white;
+  color: #dba63c;
   text-shadow: none;
   text-align: left;
   padding-top: 15px;

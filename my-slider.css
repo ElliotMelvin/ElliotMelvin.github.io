@@ -731,14 +731,13 @@ img {
 
 .button1 {
   border-radius: 8px;
-  color: white;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: #dba63c;
   margin-top: 40px;
 }
 
 .button1:hover {
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
+  background-color: rgba(219,166,60,0.7);
+
 }
 
 .box1-left {
@@ -869,7 +868,7 @@ img {
   /* Fixed/sticky position */
   bottom: 20px;
   /* Place the button at the bottom of the page */
-  right: 8px;
+  right: 3px;
   /* Place the button 30px from the right */
   z-index: 99;
   /* Make sure it does not overlap */
@@ -877,7 +876,7 @@ img {
   /* Remove borders */
   outline: none;
   /* Remove outline */
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   /* Set a background color */
   color: white;
   /* Text color */
@@ -893,7 +892,7 @@ img {
 }
 
 #myBtn:hover {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(255, 255, 255, 0.3);
   /* Add a dark-grey background on hover */
 }
 

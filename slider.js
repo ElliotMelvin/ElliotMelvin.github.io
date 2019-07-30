@@ -1063,17 +1063,17 @@ $(document).ready(function() {
   $(document).ready(function(){
       $(this).scrollTop(0);
   });
-
+ //Hide and reveal phone
   $(document).ready(function(){
     // hide our element on page load
     $('#animation').css('opacity', 0);
 
     $('#animation').waypoint(function() {
         $('#animation').addClass('animated fadeInLeft');
-    }, { offset: '0%' });
+    }, { offset: '50%' });
 
   });
-
+// Pause arrow animation when hovered on
   $(document).ready(function(){
   $(".arrow-container").hover(function(){
       $(".animated").css("animation-play-state", "paused");

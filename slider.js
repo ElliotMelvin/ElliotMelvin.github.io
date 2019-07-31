@@ -1054,11 +1054,7 @@ $(document).ready(function() {
       }, 500);
   });
 
- // rotatein on arrow up
-      $('.fa-chevron-up').hover(function(){
-          $(this).addClass('animated rotateIn');
-  });
-
+ 
 // when page is reloaded it will take user to the top
   $(document).ready(function(){
       $(this).scrollTop(0);

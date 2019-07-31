@@ -241,7 +241,7 @@ h2 {
   margin: auto;
   position: relative;
   color: white;
-  text-shadow: 0px 0px 3px #fe0000, -1px -1px #d50d0d, 1px 1px #000;
+  text-shadow: 0px 0px 3px #dba63c, -1px -1px #dba63c, 1px 1px #000;
 }
 
 .heading-container {
@@ -533,9 +533,8 @@ p.ism-badge a.ism-link:hover {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-#my-slider:hover .ism-button {
-  visibility: visible;
-}
+
+
 
 #my-slider .ism-radios {
   display: block;
@@ -590,6 +589,14 @@ p.ism-badge a.ism-link:hover {
   width: 100%;
   height: 100%;
 }
+
+@media screen and (min-width: 600px) {
+  #my-slider:hover .ism-button {
+    visibility: visible;
+  }
+
+
+  }
 
 /* -----------------  End of image slider -----------------*/
 /* -----------------  Image gallery -----------------*/

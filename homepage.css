@@ -601,7 +601,7 @@ p.ism-badge a.ism-link:hover {
 /* -----------------  Image gallery -----------------*/
 h3 {
   text-align: center;
-  padding: 70px;
+  padding-top: 10px;
   font-size: calc(1em + 0.6vw);
   margin: 0;
   padding-bottom: 20px;

@@ -1,8 +1,4 @@
 /* -----------------  Body -----------------*/
-@font-face {
-  font-family: bodyfont;
-  src: url(../ElliotMelvin.github.io/assests/fonts/LemonMilkitalic.otf);
-}
 
 html, body {
   height: 100%;
@@ -10,7 +6,10 @@ html, body {
   padding: 0;
   font-family: bodyfont;
 }
-
+@font-face {
+  font-family: bodyfont;
+  src: url(../ElliotMelvin.github.io/assests/fonts/LemonMilkitalic.otf);
+}
 
 html {
   overflow: scroll;

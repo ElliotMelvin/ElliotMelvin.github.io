@@ -1019,6 +1019,7 @@
   return d
 });
 
+
 // hide text when checkbox is ticked
 $(document).ready(function() {
   $('input[type="checkbox"]').click(function () {
@@ -1054,7 +1055,7 @@ $(document).ready(function() {
       }, 500);
   });
 
- 
+
 // when page is reloaded it will take user to the top
   $(document).ready(function(){
       $(this).scrollTop(0);
@@ -1074,6 +1075,7 @@ $(document).ready(function() {
   $(".arrow-container").hover(function(){
       $(".animated").css("animation-play-state", "paused");
         });
+
   });
 
 

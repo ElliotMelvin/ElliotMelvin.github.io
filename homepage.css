@@ -29,6 +29,30 @@ html {
 /* -----------------  End of Body -----------------*/
 
 /* -----------------  Navbar -----------------*/
+.nav-link {
+  padding: 10px 0px;
+  display: inline-block;
+  position: relative;
+}
+.nav-link::before {
+  transition: 300ms;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background-color: #dba63c;
+}
+
+.nav-link-ltr::before {
+  width: 0%;
+  bottom: 8px;
+}
+
+.nav-link-ltr:hover::before {
+  width: 100%;
+}
+.nav-link:hover {
+  color: #dba63c;
+}
 .cd-auto-hide-header {
   position: fixed;
   top: 0;
@@ -40,9 +64,6 @@ html {
 }
 .cd-auto-hide-header.is-hidden {
   transform: translateY(-100%);
-}
-.fas {
-  color: white;
 }
 
 .nav-title {
@@ -83,14 +104,13 @@ html {
 
 .nav>.nav-links>a {
   display: inline-block;
-  padding: 15px 10px 15px 10px;
+  padding: 15px 0px 15px 0px;
   text-decoration: none;
   color: #efefef;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
-.nav>.nav-links>a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-}
 
 .nav>#nav-check {
   display: none;

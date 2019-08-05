@@ -32,6 +32,9 @@ html {
   display: inline-block;
   position: relative;
 }
+.nav > .nav-links > a:hover{
+  color: #dba63c;
+}
 
 .nav-link::before {
   transition: 300ms;

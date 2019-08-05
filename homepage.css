@@ -1,11 +1,11 @@
 /* -----------------  Body -----------------*/
-
 html, body {
   height: 100%;
   margin: 0px;
   padding: 0;
   font-family: bodyfont;
 }
+
 @font-face {
   font-family: bodyfont;
   src: url(../ElliotMelvin.github.io/assests/fonts/LemonMilkitalic.otf);
@@ -25,15 +25,14 @@ html {
   /* Optional: just make scrollbar invisible */
 }
 
-
 /* -----------------  End of Body -----------------*/
-
 /* -----------------  Navbar -----------------*/
 .nav-link {
   padding: 10px 0px;
   display: inline-block;
   position: relative;
 }
+
 .nav-link::before {
   transition: 300ms;
   height: 5px;
@@ -50,9 +49,11 @@ html {
 .nav-link-ltr:hover::before {
   width: 100%;
 }
+
 .nav-link:hover {
   color: #dba63c;
 }
+
 .cd-auto-hide-header {
   position: fixed;
   top: 0;
@@ -62,6 +63,7 @@ html {
   transition: transform .5s;
   z-index: 99;
 }
+
 .cd-auto-hide-header.is-hidden {
   transform: translateY(-100%);
 }
@@ -100,6 +102,7 @@ html {
   display: inline;
   font-size: 22px;
   float: right;
+  margin-right: 50px;
 }
 
 .nav>.nav-links>a {
@@ -107,10 +110,9 @@ html {
   padding: 15px 0px 15px 0px;
   text-decoration: none;
   color: #efefef;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 15px;
+  margin-left: 15px;
 }
-
 
 .nav>#nav-check {
   display: none;
@@ -162,7 +164,9 @@ html {
 
   .nav>.nav-links>a {
     display: block;
-    width: 100%;
+    display: inline-block;
+    clear: both;
+    float: left;
   }
 
   .nav>#nav-check:not(:checked)~.nav-links {
@@ -491,7 +495,6 @@ p.ism-badge a.ism-link:hover {
   text-decoration: underline;
 }
 
-
 /* SLIDER */
 #my-slider {
   width: 100%;
@@ -564,9 +567,6 @@ p.ism-badge a.ism-link:hover {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-
-
-
 #my-slider .ism-radios {
   display: block;
   height: 20px;
@@ -625,9 +625,7 @@ p.ism-badge a.ism-link:hover {
   #my-slider:hover .ism-button {
     visibility: visible;
   }
-
-
-  }
+}
 
 /* -----------------  End of image slider -----------------*/
 /* -----------------  Image gallery -----------------*/
@@ -732,7 +730,6 @@ img {
 }
 
 /* -----------------  End of image gallery -----------------*/
-
 /* -----------------  Social media -----------------*/
 .social-media-container {
   width: auto;
@@ -774,8 +771,7 @@ img {
 }
 
 .button1:hover {
-  background-color: rgba(219,166,60,0.7);
-
+  background-color: rgba(219, 166, 60, 0.7);
 }
 
 .box1-left {

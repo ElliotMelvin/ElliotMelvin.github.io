@@ -137,9 +137,9 @@ html {
 
   .nav>.nav-btn>label {
     display: inline-block;
-    width: 60px;
-    height: 60px;
-    padding: 18px;
+    width: 70px;
+    height: 70px;
+    padding: 20px;
     box-sizing: border-box;
   }
 
@@ -149,7 +149,7 @@ html {
 
   .nav>.nav-btn>label>span {
     display: block;
-    width: 25px;
+    width: 30px;
     height: 10px;
     border-top: 2px solid #eee;
   }
@@ -162,7 +162,7 @@ html {
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
-    top: 60px;
+    top: 70px;
     left: 0px;
   }
 

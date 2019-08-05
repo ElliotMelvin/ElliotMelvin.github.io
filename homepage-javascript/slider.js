@@ -1022,63 +1022,69 @@
 
 // hide text when checkbox is ticked
 $(document).ready(function() {
-  $('input[type="checkbox"]').click(function () {
-          if ($(this).is(":checked")) {
-              $(".heading-container").hide();
-          } else {
-              $(".heading-container").show();
-          }
+  $('input[type="checkbox"]').click(function() {
+    if ($(this).is(":checked")) {
+      $(".heading-container").hide();
+    } else {
+      $(".heading-container").show();
+    }
   });
 
-// scroll down button
+  // scroll down button
   $("a[href^='#']").click(function(e) {
-  	e.preventDefault();
+    e.preventDefault();
 
-  	var position = $($(this).attr("href")).offset().top;
+    var position = $($(this).attr("href")).offset().top;
 
-  	$("body, html").animate({
-  		scrollTop: position
-  	}, 500 );
+    $("body, html").animate({
+      scrollTop: position
+    }, 500);
   });
 
   // ===== Scroll to Top ====
   $(window).scroll(function() {
-      if ($(this).scrollTop() >= 400) {        // If page is scrolled more than 50px
-          $('#myBtn').fadeIn(200);    // Fade in the arrow
-      } else {
-          $('#myBtn').fadeOut(200);   // Else fade out the arrow
-      }
+    if ($(this).scrollTop() >= 400) { // If page is scrolled more than 50px
+      $('#myBtn').fadeIn(200); // Fade in the arrow
+    } else {
+      $('#myBtn').fadeOut(200); // Else fade out the arrow
+    }
   });
-  $('#myBtn').click(function() {      // When arrow is clicked
-      $('body,html').animate({
-          scrollTop : 0                       // Scroll to top of body
-      }, 500);
+  $('#myBtn').click(function() { // When arrow is clicked
+    $('body,html').animate({
+      scrollTop: 0 // Scroll to top of body
+    }, 500);
   });
 
 
-// when page is reloaded it will take user to the top
-  $(document).ready(function(){
-      $(this).scrollTop(0);
+  // when page is reloaded it will take user to the top
+  $(document).ready(function() {
+    $(this).scrollTop(0);
   });
- //Hide and reveal phone
-  $(document).ready(function(){
+  //Hide and reveal phone
+  $(document).ready(function() {
     // hide our element on page load
     $('#animation').css('opacity', 0);
 
     $('#animation').waypoint(function() {
-        $('#animation').addClass('animated fadeInLeft');
-    }, { offset: '50%' });
+      $('#animation').addClass('animated fadeInLeft');
+    }, {
+      offset: '50%'
+    });
 
   });
-// Pause arrow animation when hovered on
-  $(document).ready(function(){
-  $(".arrow-container").hover(function(){
+  // Pause arrow animation when hovered on
+  $(document).ready(function() {
+    $(".arrow-container").hover(function() {
       $(".animated").css("animation-play-state", "paused");
-        });
-
+    });
   });
 
-
-
+// remove underline on selected page on navbar
+$(".nav-link").on('mouseenter', function() {
+    $('.homepage-link').removeClass('active-link');
+});
+$(".nav-link").on('mouseleave', function() {
+      $('.homepage-link').addClass('active-link');
+});
 
 })();

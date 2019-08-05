@@ -2,27 +2,45 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Biography</title>
+    <title>Elliot Melvin - Shop</title>
   </head>
-
+  <link rel="stylesheet" href="shop.css"></link>
+  <!-- Jquery -->
+  <script src="../homepage-javascript/jquery.min.js"></script>
+  <!-- Main javascript for about me page-->
+  <script src="shop.js"></script>
+  <!-- hide navbar -->
+  <script src="../homepage-javascript/hide-navbar.js"></script>
   <body>
-<h1>About me</h1>
 
-<a href="../index.html"> Home </a>
-
-  <a href="#" id="cart"><i class="fa fa-shopping-cart cart-icon"></i> Cart</a>
-<!-- Shopping Cart -->
-<div class="container">
-  <div class="shopping-cart" style="display: none;">
-    <div class="shopping-cart-header">
-      <i class="fa fa-shopping-cart cart-icon"></i><span class="badge">0</span>
-
-      <a href="#" class="button">Checkout</a>
+<!-- Navbar -->
+<header class="cd-auto-hide-header">
+  <div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        <a href="../index.html" style="text-decoration: none; color: #dba63c;">Elliot Melvin</a>
+      </div>
     </div>
-    <!--end shopping-cart -->
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+
+    <div class="nav-links">
+      <a class="nav-link nav-link-ltr" href="../index.html">Home</a>
+      <a class="nav-link nav-link-ltr" href="../page-about/index.html">About</a>
+      <a class="nav-link nav-link-ltr" href="../page-portfolio/index.html">Portfolio</a>
+      <a class="nav-link nav-link-ltr" href="../page-videos/index.html">Videos</a>
+      <a class="nav-link active-link homepage-link" href="../page-shop/index.html">Shop</a>
+    </div>
   </div>
-  <!--end container -->
-</div>
+  </div>
+</header>
+<!-- End of Navbar -->
 
   </body>
 </html>

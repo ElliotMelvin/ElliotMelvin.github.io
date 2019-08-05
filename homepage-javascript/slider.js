@@ -1025,8 +1025,12 @@ $(document).ready(function() {
   $('input[type="checkbox"]').click(function() {
     if ($(this).is(":checked")) {
       $(".heading-container").hide();
+      $(".arrow-container").hide();
+      $(".ism-radios").hide();
     } else {
       $(".heading-container").show();
+      $(".arrow-container").show();
+      $(".ism-radios").show();
     }
   });
 
@@ -1072,12 +1076,6 @@ $(document).ready(function() {
     });
 
   });
-  // Pause arrow animation when hovered on
-  $(document).ready(function() {
-    $(".arrow-container").hover(function() {
-      $(".animated").css("animation-play-state", "paused");
-    });
-  });
 
 // remove underline on selected page on navbar
 $(".nav-link").on('mouseenter', function() {
@@ -1086,5 +1084,6 @@ $(".nav-link").on('mouseenter', function() {
 $(".nav-link").on('mouseleave', function() {
       $('.homepage-link').addClass('active-link');
 });
+
 
 })();

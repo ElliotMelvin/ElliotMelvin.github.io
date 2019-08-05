@@ -186,6 +186,11 @@ html {
 /* -----------------  End of navbar -----------------*/
 /* -----------------  Scroll down -----------------*/
 .arrow-container {
+  -webkit-animation: ism-fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: ism-fadein 3s; /* Firefox < 16 */
+        -ms-animation: ism-fadein 3s; /* Internet Explorer */
+         -o-animation: ism-fadein 3s; /* Opera < 12.1 */
+            animation: ism-fadein 3s;
   display: block;
   width: 50px;
   height: 70px;
@@ -194,6 +199,7 @@ html {
   left: 50%;
   transform: translate(-50%, -50%) rotateZ(0deg);
   z-index: 5
+
 }
 
 .arrow-container:hover {
@@ -279,8 +285,13 @@ h2 {
 .heading-container, h1, h2 {
   margin: auto;
   position: relative;
-  color: white;
-  text-shadow: 0px 0px 3px #dba63c, -1px -1px #dba63c, 1px 1px #000;
+  color: #dba63c;
+  text-shadow: 3px 3px #000;
+  -webkit-animation: ism-fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: ism-fadein 3s; /* Firefox < 16 */
+        -ms-animation: ism-fadein 3s; /* Internet Explorer */
+         -o-animation: ism-fadein 3s; /* Opera < 12.1 */
+            animation: ism-fadein 3s;
 }
 
 .heading-container {
@@ -331,7 +342,7 @@ h2 {
 }
 
 @-webkit-keyframes ism-loading {
-  50% {
+  60% {
     left: 120px;
   }
 }
@@ -414,6 +425,11 @@ h2 {
   list-style: none;
   color: #fff;
   font-size: 1px;
+  -webkit-animation: ism-fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: ism-fadein 3s; /* Firefox < 16 */
+        -ms-animation: ism-fadein 3s; /* Internet Explorer */
+         -o-animation: ism-fadein 3s; /* Opera < 12.1 */
+            animation: ism-fadein 3s;
 }
 
 .ism-slider .ism-radios {

@@ -209,52 +209,43 @@ background-color: white;
   margin: 0;
   padding:0;
 }
-
+/*---- Container 1 ----*/
 .inner-container1 {
 max-width: 50%;
-height: 75%;
+height: 700px;
 margin: 0 auto;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
 border-radius: 20px;
 position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+margin-top: 50px;
+margin-bottom: 30px;
 }
 
 .inner-container1 img{
   height: 100%;
   width: 100%;
   object-fit: cover;
-  border-radius: 20px;
+border-radius: 20px;
 }
 
-.inner-container1 h1{
-  color: white;
-  margin: 0;
-  padding:0;
-}
 
+/*---- Container 2 ----*/
 .inner-container2 {
 max-width: 50%;
-height: 75%;
+height: 700px;
 margin: 0 auto;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
 border-radius: 20px;
 position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  margin-top: 50px
+margin-bottom: 50px;
+margin-top: 30px;
 }
 
 .inner-container2 img{
   height: 100%;
   width: 100%;
   object-fit: cover;
-  border-radius: 20px;
+    border-radius: 20px;
 }
 
 /* -----------------  End of text box -----------------*/

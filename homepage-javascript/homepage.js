@@ -1072,7 +1072,7 @@ $(document).ready(function() {
     $('#animation').waypoint(function() {
       $('#animation').addClass('animated fadeInLeft');
     }, {
-      offset: '50%'
+      offset: '75%'
     });
 
   });

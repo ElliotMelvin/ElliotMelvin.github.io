@@ -183,12 +183,14 @@ html, body {
   height: 65%;
   border:red solid 2px;
   background-color: #333333;
+
 }
 
 .image-container img{
 height: 100%;
 width: 100%;
 object-fit: cover;
+
 }
 
 /* -----------------  End of image box -----------------*/
@@ -197,11 +199,63 @@ object-fit: cover;
 
 .text-container{
 max-width: 100%;
-height: 100%;
-background-color: #333333;
+height: auto;
+background-color: white;
+
 }
 
+.inner-container1 h1{
+  color: white;
+  margin: 0;
+  padding:0;
+}
 
+.inner-container1 {
+max-width: 50%;
+height: 75%;
+margin: 0 auto;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+border-radius: 20px;
+position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.inner-container1 img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.inner-container1 h1{
+  color: white;
+  margin: 0;
+  padding:0;
+}
+
+.inner-container2 {
+max-width: 50%;
+height: 75%;
+margin: 0 auto;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+border-radius: 20px;
+position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-top: 50px
+}
+
+.inner-container2 img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
 
 /* -----------------  End of text box -----------------*/
 

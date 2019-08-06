@@ -1064,6 +1064,7 @@ $(document).ready(function() {
   $(document).ready(function() {
     $(this).scrollTop(0);
   });
+
   //Hide and reveal phone
   $(document).ready(function() {
     // hide our element on page load

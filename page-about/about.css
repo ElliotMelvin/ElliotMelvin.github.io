@@ -229,8 +229,21 @@ margin-bottom: 30px;
   width: 100%;
   object-fit: cover;
 border-radius: 20px;
+
 }
 
+.inner-container1 p{
+  color: white;
+  font-size: 24px;
+  margin: 0;
+  position: absolute;
+z-index: 6;
+margin: 0 auto;
+left: 10%;
+right: 10%;
+top: 10%;
+
+}
 
 /*---- Container 2 ----*/
 .inner-container2 {
@@ -248,8 +261,21 @@ margin-top: 30px;
   width: 100%;
   object-fit: cover;
     border-radius: 20px;
+
 }
 
+.inner-container2 p{
+  color: white;
+    font-size: 24px;
+  margin: 0;
+  position: absolute;
+z-index: 6;
+margin: 0 auto;
+left: 10%;
+right: 10%;
+top: 10%;
+
+}
 /* -----------------  End of text box -----------------*/
 
 /* -----------------  Footer -----------------*/

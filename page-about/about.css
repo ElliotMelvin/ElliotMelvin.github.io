@@ -295,6 +295,11 @@ top: 10%;
 .inner-container2 br{
   margin-bottom: 25px;
 }
+
+@media (max-width: 600px) {
+
+  
+}
 /* -----------------  End of text box -----------------*/
 
 /* -----------------  Footer -----------------*/
@@ -397,7 +402,7 @@ top: 10%;
   width: 50px;
   border-radius: 50%;
   height: 50px;
-  
+
 }
 
 #myBtn:hover {

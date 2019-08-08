@@ -1086,5 +1086,13 @@ $(".nav-link").on('mouseleave', function() {
       $('.homepage-link').addClass('active-link');
 });
 
+$(document).ready(function($) {
+    var Body = $('body');
+    Body.addClass('preloader-site');
+});
+$(window).load(function() {
+    $('.preloader-wrapper').fadeOut();
+    $('body').removeClass('preloader-site');
+});
 
 })();

@@ -477,3 +477,130 @@ a {
   font-weight: 600;
 }
 /* -----------------  end of image gallery -----------------*/
+
+/* -----------------  Footer -----------------*/
+.footer-distributed {
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font-size: 22px;
+  padding: 35px 50px;
+  padding-top: 3%;
+  padding-right: 10%;
+}
+
+.fa-facebook:hover, .fa-instagram:hover, .fa-github:hover{
+  color: #dba63c;
+}
+
+#color:hover{
+     color: #dba63c;
+ }
+
+.footer-distributed .footer-left p {
+  color: #dba63c;
+  font-size: 18px;
+  margin: 0;
+}
+
+/* Footer links */
+.footer-distributed p.footer-links {
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-right {
+  float: right;
+  max-width: 180px;
+
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 30px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+}
+
+@media (max-width: 600px) {
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-right {
+    text-align: center;
+  }
+
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+      font-size: 14px;
+  }
+}
+
+/* -----------------  End of footer -----------------*/
+
+/* -----------------  Return to top -----------------*/
+#myBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 3px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  border-radius: 10px;
+  /* Rounded corners */
+  font-size: 24px;
+  /* Increase font size */
+  width: 50px;
+  border-radius: 50%;
+  height: 50px;
+}
+
+#myBtn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  /* Add a dark-grey background on hover */
+}
+
+@media (max-width: 600px) {
+  #myBtn {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+  }
+}
+
+/* -----------------  End of Return to top -----------------*/

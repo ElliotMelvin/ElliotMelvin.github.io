@@ -174,6 +174,8 @@ html, body {
 /* -----------------  End of navbar -----------------*/
 
 /* -----------------  Start of image gallery -----------------*/
+
+
 html:not(.touch) .gallery-image figcaption, .touch .gallery-image figcaption, .mfp-with-zoom .mfp-title {
   position: absolute;
   top: 50%;
@@ -232,10 +234,12 @@ html {
   text-rendering: optimizelegibility;
 }
 
-
 .gallery {
   -webkit-column-gap: 0;
           column-gap: 0;
+          background:  #333333;
+          padding-bottom: 50px;
+          padding-top: 70px;
 }
 @media (min-width: 480px) {
   .gallery {
@@ -439,46 +443,12 @@ a {
   color: inherit;
 }
 
-[id=footer] {
-  margin-top: 10vh;
-  padding: 10vh 0;
-  text-align: center;
-}
-[id=footer] .container {
-  position: relative;
-}
-[id=footer] .container:before, [id=footer] .container:after {
-  content: "";
-  position: absolute;
-  bottom: 100%;
-  left: 20px;
-  z-index: 10;
-  border-top: 2px solid;
-  width: 10%;
-  margin-bottom: 10vh;
-}
-[id=footer] .container:after {
-  left: auto;
-  right: 20px;
-}
-[id=footer] * {
-  display: block;
-}
-[id=footer] * + * {
-  margin-top: 5vh;
-}
-[id=footer] .logo {
-  font-weight: 600;
-  font-size: 1.5em;
-}
-[id=footer] .copy {
-  text-transform: uppercase;
-  font-size: 0.75em;
-  font-weight: 600;
-}
+
 /* -----------------  end of image gallery -----------------*/
 
 /* -----------------  Footer -----------------*/
+
+
 .footer-distributed {
   background-color: #292c2f;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);

@@ -303,10 +303,11 @@ h2 {
   text-align: center;
   top: -54vh;
   pointer-events: none;
-  z-index: 5;
+  z-index: 2;
 }
 
 /* -----------------  End of center text  -----------------*/
+
 /* -----------------  Image slider -----------------*/
 .ism-slider>ol, .ism-slider>ol>li, .ism-slider>ol>li>img {
   width: 100%;
@@ -326,7 +327,8 @@ h2 {
   user-select: none;
   cursor: default;
   z-index: 2;
-  background-color: #333333;
+  background: #333333;
+  color: #333333;
   -webkit-animation: ism-fadein 3s;
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
@@ -334,20 +336,8 @@ h2 {
   height: 100%;
 }
 
-@-webkit-keyframes ism-fadein {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes ism-loading {
-  60% {
-    left: 120px;
-  }
+.gallery-container{
+  background: #333333;
 }
 
 .ism-slider .ism-slides {
@@ -422,19 +412,6 @@ h2 {
   display: block;
 }
 
-.ism-radios {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  color: #fff;
-  font-size: 1px;
-  -webkit-animation: ism-fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: ism-fadein 3s; /* Firefox < 16 */
-        -ms-animation: ism-fadein 3s; /* Internet Explorer */
-         -o-animation: ism-fadein 3s; /* Opera < 12.1 */
-            animation: ism-fadein 3s;
-}
-
 .ism-slider .ism-radios {
   position: absolute;
   -webkit-box-sizing: border-box;
@@ -466,15 +443,6 @@ h2 {
   display: none;
 }
 
-.ism-radios label {
-  display: block;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0;
-  text-decoration: none;
-  cursor: pointer;
-}
 
 .ism-radios-as-thumbnails label {
   -webkit-background-size: 120% auto;
@@ -573,23 +541,6 @@ p.ism-badge a.ism-link:hover {
   display: block;
   height: 20px;
   text-align: center;
-}
-
-#my-slider .ism-radios label {
-  width: 20px;
-  height: 20px;
-  border-radius: 3px;
-  color: #000;
-  background-color: rgba(0, 0, 0, 0.2);
-  border: 2px solid rgba(255, 255, 255, 0.7);
-}
-
-#my-slider .ism-radios li.active label {
-  background-color: rgba(255, 255, 255, 1.0);
-}
-
-#my-slider .ism-radios label:hover {
-  border: 2px solid rgba(255, 255, 255, 1.0);
 }
 
 /* SLIDES */

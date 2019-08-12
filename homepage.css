@@ -844,6 +844,7 @@ img {
   .footer-distributed .footer-left,
   .footer-distributed .footer-right {
     text-align: center;
+    font-size: 12px;
   }
 
   .footer-distributed .footer-right {

@@ -286,8 +286,16 @@ background-repeat: no-repeat;
 .inner-container1 {
 max-width: 90%;
 }
+.inner-container1 p {
+  margin-right: 5%;
+    margin-left: 5%;
+}
 .inner-container2 {
 max-width: 90%;
+}
+.inner-container2 p{
+  margin-right: 5%;
+    margin-left: 5%;
 }
 }
 

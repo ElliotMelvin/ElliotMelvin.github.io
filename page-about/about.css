@@ -388,7 +388,6 @@ max-width: 90%;
   .footer-distributed .footer-left,
   .footer-distributed .footer-right {
     text-align: center;
-    font-size: 12px;
   }
 
   .footer-distributed .footer-right {
@@ -398,7 +397,7 @@ max-width: 90%;
 
   .footer-distributed .footer-left p.footer-links {
     line-height: 1.8;
-      font-size: 14px;
+      font-size: 12px;
   }
 }
 

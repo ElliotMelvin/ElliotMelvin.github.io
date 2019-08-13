@@ -234,10 +234,6 @@ html {
   text-rendering: optimizelegibility;
 }
 
-body {
-  font-family: "Montserrat", sans-serif;
-}
-
 .gallery {
   -webkit-column-gap: 0;
           column-gap: 0;
@@ -444,50 +440,9 @@ a {
   color: inherit;
 }
 
-[id=footer] {
-  margin-top: 10vh;
-  padding: 10vh 0;
-  text-align: center;
-}
-[id=footer] .container {
-  position: relative;
-}
-[id=footer] .container:before, [id=footer] .container:after {
-  content: "";
-  position: absolute;
-  bottom: 100%;
-  left: 20px;
-  z-index: 10;
-  border-top: 2px solid;
-  width: 10%;
-  margin-bottom: 10vh;
-}
-[id=footer] .container:after {
-  left: auto;
-  right: 20px;
-}
-[id=footer] * {
-  display: block;
-}
-[id=footer] * + * {
-  margin-top: 5vh;
-}
-[id=footer] .logo {
-  font-weight: 600;
-  font-size: 1.5em;
-}
-[id=footer] .copy {
-  text-transform: uppercase;
-  font-size: 0.75em;
-  font-weight: 600;
-}
-
-
-
 /* -----------------  end of image gallery -----------------*/
 
 /* -----------------  Footer -----------------*/
-
 
 .footer-distributed {
   background-color: #292c2f;
@@ -496,7 +451,7 @@ a {
   width: 100%;
   text-align: left;
   font-size: 22px;
-  padding: 35px 50px;
+  padding: 25px 50px;
   padding-top: 2%;
   padding-right: 10%;
 }

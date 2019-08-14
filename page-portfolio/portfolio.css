@@ -335,28 +335,13 @@ html:not(.touch) .gallery-image:hover:after {
   margin-top: 0 !important;
   width: 20%;
   height: 30%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+
 }
-.mfp-arrow:before, .mfp-arrow:after {
-  margin: 0;
-  border: none;
-  width: 2rem;
-  height: 2rem;
-  -webkit-transform: rotate(-45deg) translate(-50%, -100%);
-          transform: rotate(-45deg) translate(-50%, -100%);
-  opacity: 1;
-  top: 50%;
-  left: 50%;
-  transition: all 0.15s;
-}
-.mfp-arrow:active {
-  -webkit-transform: translateY(-50%) scale(0.95);
-          transform: translateY(-50%) scale(0.95);
-}
+
 
 .mfp-arrow-left {
   left: 0;
+
 }
 .mfp-arrow-left:before, .mfp-arrow-left:after {
   border-top: 2px solid white;
@@ -388,7 +373,7 @@ html:not(.touch) .gallery-image:hover:after {
 .mfp-arrow-right:hover:after {
   margin-left: 0;
 }
-
+/* --  Close button --*/
 button.mfp-close {
   opacity: 1;
   margin-top: 0 !important;
@@ -401,8 +386,8 @@ button.mfp-close {
 button.mfp-close:before, button.mfp-close:after {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 29%;
+  left: 29%;
   margin: 0;
   border: none;
   width: 2rem;
@@ -434,7 +419,7 @@ button.mfp-close:active {
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
 }
-
+/* --  End of Close button --*/
 a {
   text-decoration: none;
   color: inherit;

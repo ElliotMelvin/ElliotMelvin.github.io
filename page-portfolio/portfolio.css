@@ -175,6 +175,10 @@ html, body {
 
 /* -----------------  Start of image gallery -----------------*/
 
+.image-gallery{
+  padding-top: 70px;
+  background: #333333;
+}
 
 html:not(.touch) .gallery-image figcaption, .touch .gallery-image figcaption, .mfp-with-zoom .mfp-title {
   position: absolute;

@@ -21,7 +21,7 @@ $(document).ready(function($) {
       tCounter: ''
     },
     disableOn: function() {
-      return $(window).width() > 640;
+      return $(window).width() > 140;
     }
   });
 

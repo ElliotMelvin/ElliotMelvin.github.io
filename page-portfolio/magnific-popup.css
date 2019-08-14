@@ -187,12 +187,12 @@ button::-moz-focus-inner {
     position: absolute;
     left: 0;
     top: 0;
-    margin-top: 35px;
+    margin-top: 18px;
     margin-left: 35px;
     border: medium inset transparent; }
   .mfp-arrow:after {
-    border-top-width: 13px;
-    border-bottom-width: 13px;
+    border-top-width: 30px;
+    border-bottom-width: 30px;
     top: 8px; }
   .mfp-arrow:before {
     border-top-width: 21px;
@@ -200,21 +200,18 @@ button::-moz-focus-inner {
     opacity: 0.7; }
 
 .mfp-arrow-left {
-  left: 0; }
+  left: 25px; }
   .mfp-arrow-left:after {
-    border-right: 17px solid #FFF;
-    margin-left: 31px; }
-  .mfp-arrow-left:before {
-    margin-left: 25px;
-    border-right: 27px solid #3F3F3F; }
+    border-right: 40px solid #FFF;
+    margin-left: 30px; }
+
 
 .mfp-arrow-right {
-  right: 0; }
+  right: 25px; }
   .mfp-arrow-right:after {
-    border-left: 17px solid #FFF;
-    margin-left: 39px; }
-  .mfp-arrow-right:before {
-    border-left: 27px solid #3F3F3F; }
+    border-left: 40px solid #FFF;
+    margin-left: 30px; }
+
 
 .mfp-iframe-holder {
   padding-top: 40px;

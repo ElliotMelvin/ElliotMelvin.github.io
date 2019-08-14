@@ -339,40 +339,6 @@ html:not(.touch) .gallery-image:hover:after {
 }
 
 
-.mfp-arrow-left {
-  left: 0;
-
-}
-.mfp-arrow-left:before, .mfp-arrow-left:after {
-  border-top: 2px solid white;
-  border-left: 2px solid white;
-}
-.mfp-arrow-left:after {
-  margin-left: 2rem;
-}
-.mfp-arrow-left:hover:before, .mfp-arrow-left:active:before {
-  margin-left: 2rem;
-}
-.mfp-arrow-left:hover:after, .mfp-arrow-left:active:after {
-  margin-left: 0;
-}
-
-.mfp-arrow-right {
-  right: 0;
-}
-.mfp-arrow-right:before, .mfp-arrow-right:after {
-  border-right: 2px solid white;
-  border-bottom: 2px solid white;
-}
-.mfp-arrow-right:after {
-  margin-left: 2rem;
-}
-.mfp-arrow-right:hover:before {
-  margin-left: 2rem;
-}
-.mfp-arrow-right:hover:after {
-  margin-left: 0;
-}
 /* --  Close button --*/
 button.mfp-close {
   opacity: 1;

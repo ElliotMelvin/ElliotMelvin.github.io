@@ -3,7 +3,7 @@ $(document).ready(function($) {
 (function() {
   $('.gallery-link').magnificPopup({
     type: 'image',
-    closeOnContentClick: true,
+    closeOnContentClick: false,
     closeBtnInside: false,
     mainClass: 'mfp-with-zoom mfp-img-mobile',
     image: {
@@ -17,7 +17,7 @@ $(document).ready(function($) {
     },
     gallery: {
       enabled: true,
-      navigateByImgClick: false,
+      navigateByImgClick: true,
       tCounter: ''
     },
     disableOn: function() {

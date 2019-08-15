@@ -170,7 +170,12 @@ html, body {
     overflow-y: auto;
   }
 }
-
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+  scrollbar-width: none; // Firefox
+  -ms-overflow-style: none;
+}
 /* -----------------  End of navbar -----------------*/
 
 /* -----------------  Start of image gallery -----------------*/

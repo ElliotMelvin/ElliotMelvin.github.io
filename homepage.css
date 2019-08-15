@@ -18,12 +18,6 @@ html {
   -ms-overflow-style: none;
 }
 
-::-webkit-scrollbar {
-  width: 0px;
-  /* Remove scrollbar space */
-  background: transparent;
-  /* Optional: just make scrollbar invisible */
-}
 
 /* -----------------  End of Body -----------------*/
 /* -----------------  Navbar -----------------*/
@@ -738,6 +732,12 @@ img {
 .box1-left img {
   height: 400px;
   object-fit: contain;
+  -moz-box-shadow: 3px 5px 18px #000;
+-webkit-box-shadow: 3px 5px 18px #000;
+box-shadow: 3px 5px 18px #000;
+-moz-border-radius: 41px;
+-webkit-border-radius: 41px;
+border-radius: 36px;
 }
 
 .box2-right p {

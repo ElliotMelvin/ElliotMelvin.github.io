@@ -240,7 +240,7 @@ html:not(.touch) .gallery-image figcaption.visible:after, html:not(.touch) .gall
 html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  text-rendering: optimizelegibility;
+
 }
 
 .gallery {

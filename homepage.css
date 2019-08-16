@@ -730,6 +730,7 @@ img {
 }
 
 .box1-left img {
+  width: auto;
   height: 400px;
   object-fit: contain;
   -moz-box-shadow: 3px 5px 18px #000;

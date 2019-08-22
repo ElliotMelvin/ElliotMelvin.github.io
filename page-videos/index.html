@@ -1,47 +1,64 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Elliot Melvin - Videos</title>
-  </head>
-  <link rel="stylesheet" href="videos.css"></link>
+
+<head>
+  <meta charset="utf-8">
+  <title>Elliot Melvin - Videos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="videos.css">
+  </link>
   <!-- Jquery -->
   <script src="../homepage-javascript/jquery.min.js"></script>
   <!-- Main javascript for about me page-->
-  <script src="videos.js"></script>
+  <script src="javascript/videos.js"></script>
   <!-- hide navbar -->
   <script src="../homepage-javascript/hide-navbar.js"></script>
-  <body>
+  <!-- full screen video -->
+  <script src="javascript/jquery.vide.js"></script>
+  <!-- full screen video -->
+  <script src="javascript/jquery.vide.js"></script>
+</head>
 
-<!-- Navbar -->
-<header class="cd-auto-hide-header">
-  <div class="nav">
-    <input type="checkbox" id="nav-check">
-    <div class="nav-header">
-      <div class="nav-title">
-        <a href="../index.html" style="text-decoration: none; color: #dba63c;">Elliot Melvin</a>
+<body data-vide-bg="motionplace">
+  <!-- Navbar -->
+  <header class="cd-auto-hide-header">
+    <div class="nav">
+      <input type="checkbox" id="nav-check">
+      <div class="nav-header">
+        <div class="nav-title">
+          <a href="../index.html" style="text-decoration: none; color: #dba63c;">Elliot Melvin</a>
+        </div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <div class="nav-links">
+        <a class="nav-link nav-link-ltr" href="../index.html">Home</a>
+        <a class="nav-link nav-link-ltr" href="../page-about/index.html">About</a>
+        <a class="nav-link nav-link-ltr" href="../page-portfolio/index.html">Portfolio</a>
+        <a class="nav-link active-link homepage-link" href="../page-videos/index.html">Videos</a>
+        <a class="nav-link nav-link-ltr" href="../page-shop/index.html">Shop</a>
       </div>
     </div>
-    <div class="nav-btn">
-      <label for="nav-check">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
     </div>
+  </header>
+  <!-- End of Navbar -->
 
-    <div class="nav-links">
-      <a class="nav-link nav-link-ltr" href="../index.html">Home</a>
-      <a class="nav-link nav-link-ltr" href="../page-about/index.html">About</a>
-      <a class="nav-link nav-link-ltr" href="../page-portfolio/index.html">Portfolio</a>
-      <a class="nav-link active-link homepage-link" href="../page-videos/index.html">Videos</a>
-      <a class="nav-link nav-link-ltr" href="../page-shop/index.html">Shop</a>
-    </div>
+  <!-- Full screen video-->
+  <div class="full-screen">
+    <h1>Nature in motion</h1>
   </div>
+  <!-- End of Full screen video-->
+
+  <div class="video-gallery">
+    <p>text </p>
   </div>
-</header>
-<!-- End of Navbar -->
+</body>
 
-
-  </body>
 </html>

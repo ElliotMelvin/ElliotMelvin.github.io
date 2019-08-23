@@ -493,7 +493,7 @@ p.ism-badge a.ism-link:hover {
   top: 50%;
   margin-top: -25px;
   color: #fff;
-  background-color: rgba(219, 166, 60, 0.5);
+  background-color: rgba(219, 166, 60, 1);
   visibility: hidden;
 }
 
@@ -508,7 +508,7 @@ p.ism-badge a.ism-link:hover {
 }
 
 #my-slider .ism-button:hover {
-  background-color: rgba(219, 166, 60, 1);
+  background-color: rgba(219, 166, 60, 0.5);
 }
 
 #my-slider .ism-radios {

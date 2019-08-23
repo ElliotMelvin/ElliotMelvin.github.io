@@ -184,6 +184,7 @@ html {
 .full-screen{
   height: 100%;
   width: 100%;
+
 }
 
 .full-screen h1 {
@@ -269,8 +270,8 @@ html {
 }
 /* -----------------  End of Full screen video -----------------*/
 .video-gallery{
-  height: 86%;
-
+  height: 88%;
+background: #333333;
 
 }
 .video-gallery p{

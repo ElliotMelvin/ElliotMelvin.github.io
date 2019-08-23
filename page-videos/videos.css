@@ -13,7 +13,7 @@ html, body {
 }
 
 html {
-  overflow: scroll;
+  overflow: hidden;
   overflow-x: hidden;
   scrollbar-width: none; // Firefox
   -ms-overflow-style: none;
@@ -269,7 +269,7 @@ html {
 }
 /* -----------------  End of Full screen video -----------------*/
 .video-gallery{
-  height: 86%;
+  height: 89.5%;
 
 
 }
@@ -284,8 +284,8 @@ html {
   width: 100%;
   text-align: left;
   font-size: 22px;
-  padding: 25px 50px;
-  padding-top: 2%;
+  padding: 15px 50px;
+  padding-top: 15px;
   padding-right: 10%;
 }
 
@@ -358,14 +358,15 @@ html {
 /* -----------------  End of footer -----------------*/
 
 /* -----------------  Return to top -----------------*/
+
 #myBtn {
   display: none;
   /* Hidden by default */
   position: fixed;
   /* Fixed/sticky position */
-  bottom: 20px;
+  bottom: 105px;
   /* Place the button at the bottom of the page */
-  right: 3px;
+  right: 12px;
   /* Place the button 30px from the right */
   z-index: 99;
   /* Make sure it does not overlap */
@@ -373,7 +374,7 @@ html {
   /* Remove borders */
   outline: none;
   /* Remove outline */
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(219, 166, 60, 1);
   /* Set a background color */
   color: white;
   /* Text color */
@@ -389,7 +390,7 @@ html {
 }
 
 #myBtn:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(219, 166, 60, 0.5);
   /* Add a dark-grey background on hover */
 }
 

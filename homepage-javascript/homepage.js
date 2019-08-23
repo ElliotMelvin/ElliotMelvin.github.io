@@ -1049,8 +1049,9 @@ $(document).ready(function() {
   $(window).scroll(function() {
     if ($(this).scrollTop() >= 400) { // If page is scrolled more than 50px
       $('#myBtn').fadeIn(200); // Fade in the arrow
+      $('#myBtn').addClass('animated fadeInRight');
     } else {
-      $('#myBtn').fadeOut(200); // Else fade out the arrow
+      $('#myBtn').fadeOut(10); // Else fade out the arrow
     }
   });
   $('#myBtn').click(function() { // When arrow is clicked
@@ -1086,6 +1087,11 @@ $(".nav-link").on('mouseleave', function() {
       $('.homepage-link').addClass('active-link');
 });
 
+
+   $('.scroll-down').click (function() {
+     $('html, body').animate({scrollTop: $('#section1').offset().top }, 'slow');
+     return false;
+   });
 
 
 })();

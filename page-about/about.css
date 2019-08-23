@@ -19,6 +19,9 @@ html {
   scrollbar-width: none; // Firefox
   -ms-overflow-style: none;
 }
+::-webkit-scrollbar {
+    display: none;
+}
 /* ----------------- End of Body -----------------*/
 
 /* -----------------  Navbar -----------------*/
@@ -338,8 +341,8 @@ max-width: 90%;
   width: 100%;
   text-align: left;
   font-size: 22px;
-  padding: 25px 50px;
-  padding-top: 2%;
+  padding: 15px 50px;
+  padding-top: 15px;
   padding-right: 10%;
 }
 
@@ -417,9 +420,9 @@ max-width: 90%;
   /* Hidden by default */
   position: fixed;
   /* Fixed/sticky position */
-  bottom: 20px;
+bottom: 105px;
   /* Place the button at the bottom of the page */
-  right: 3px;
+  right: 10px;
   /* Place the button 30px from the right */
   z-index: 99;
   /* Make sure it does not overlap */
@@ -427,7 +430,7 @@ max-width: 90%;
   /* Remove borders */
   outline: none;
   /* Remove outline */
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(219, 166, 60, 1);
   /* Set a background color */
   color: white;
   /* Text color */
@@ -443,8 +446,8 @@ max-width: 90%;
 }
 
 #myBtn:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-  /* Add a dark-grey background on hover */
+  background-color: rgba(219, 166, 60, 0.5);
+  /* Add a color background on hover */
 }
 
 @media (max-width: 600px) {

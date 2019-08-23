@@ -12,10 +12,13 @@ html, body {
 }
 
 html {
-  overflow: scroll;
+
   overflow-x: hidden;
   scrollbar-width: none; // Firefox
   -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+    display: none;
 }
 
 
@@ -181,90 +184,67 @@ html {
 }
 
 /* -----------------  End of navbar -----------------*/
-/* -----------------  Scroll down -----------------*/
-.arrow-container {
-  -webkit-animation: ism-fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: ism-fadein 3s; /* Firefox < 16 */
-        -ms-animation: ism-fadein 3s; /* Internet Explorer */
-         -o-animation: ism-fadein 3s; /* Opera < 12.1 */
-            animation: ism-fadein 3s;
-  display: block;
-  width: 50px;
-  height: 70px;
+/* ---- Scroll down ----*/
+.scroll-down {
+  opacity: 1;
+  -webkit-transition: all .5s ease-in 3s;
+  transition: all .5s ease-in 3s;
+}
+
+.scroll-down {
   position: absolute;
-  top: 90%;
+  bottom: 30px;
   left: 50%;
-  transform: translate(-50%, -50%) rotateZ(0deg);
-  z-index: 5
-
-}
-
-.arrow-container:hover {
-  cursor: pointer;
-}
-
-.arrow-container:hover .arrow {
-  top: 50%;
-}
-
-.arrow-container:hover .arrow:before {
-  transform: translate(-50%, -50%) rotateZ(-30deg);
-}
-
-.arrow-container:hover .arrow:after {
-  transform: translate(-50%, -50%) rotateZ(30deg);
-}
-
-.arrow {
-  position: absolute;
-  left: 50%;
-  transition: all .4s ease;
-}
-
-.arrow:before, .arrow:after {
-  transition: all .4s ease;
-  content: '';
+  margin-left: -16px;
   display: block;
-  position: absolute;
-  transform-origin: bottom right;
-  background: #fff;
-  width: 5px;
-  height: 32px;
-  border-radius: 10px;
-  transform: translate(-50%, -50%) rotateZ(-45deg);
+  width: 52px;
+  height: 52px;
+  border: 2px solid #FFF;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  transform: scale(1)
 }
 
-.arrow:after {
-  transform-origin: bottom left;
-  transform: translate(-50%, -50%) rotateZ(45deg);
+.scroll-down:before {
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(50% - 8px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 15px;
+    height: 15px;
+    content: "";
+    border: 2px solid white;
+    border-width: 0px 0 2px 2px;
 }
 
-.arrow:nth-child(1) {
-  opacity: 0.3;
-  top: 35%;
-}
-
-.arrow:nth-child(2) {
-  opacity: 0.6;
-  top: 55%;
-}
-
-.arrow:nth-child(3) {
-  opacity: 0.9;
-  top: 75%;
-}
-
-@media (max-width: 600px) {
-  .arrow:before, .arrow:after {
-    height: 30px;
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
   }
-
-  .arrow-container {
-    top: 85%;
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
   }
 }
 
-/* -----------------  End of scroll down -----------------*/
 /* ----------------- Center text  ----------------- */
 .container-image-slider {
   height: 100%;
@@ -787,8 +767,8 @@ border-radius: 36px;
   width: 100%;
   text-align: left;
   font-size: 22px;
-  padding: 25px 50px;
-  padding-top: 2%;
+  padding: 15px 50px;
+  padding-top: 15px;
   padding-right: 10%;
 }
 
@@ -866,9 +846,9 @@ border-radius: 36px;
   /* Hidden by default */
   position: fixed;
   /* Fixed/sticky position */
-  bottom: 20px;
+bottom: 105px;
   /* Place the button at the bottom of the page */
-  right: 3px;
+  right: 10px;
   /* Place the button 30px from the right */
   z-index: 99;
   /* Make sure it does not overlap */
@@ -876,7 +856,7 @@ border-radius: 36px;
   /* Remove borders */
   outline: none;
   /* Remove outline */
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(219, 166, 60, 1);
   /* Set a background color */
   color: white;
   /* Text color */
@@ -892,8 +872,8 @@ border-radius: 36px;
 }
 
 #myBtn:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-  /* Add a dark-grey background on hover */
+  background-color: rgba(219, 166, 60, 0.5);
+  /* Add a color background on hover */
 }
 
 @media (max-width: 600px) {

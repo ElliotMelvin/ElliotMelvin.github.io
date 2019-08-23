@@ -11,10 +11,12 @@ $(document).ready(function() {
   $(window).scroll(function() {
     if ($(this).scrollTop() >= 400) { // If page is scrolled more than 50px
       $('#myBtn').fadeIn(200); // Fade in the arrow
+      $('#myBtn').addClass('animated fadeInRight');
     } else {
-      $('#myBtn').fadeOut(200); // Else fade out the arrow
+      $('#myBtn').fadeOut(10); // Else fade out the arrow
     }
   });
+
   $('#myBtn').click(function() { // When arrow is clicked
     $('body,html').animate({
       scrollTop: 0 // Scroll to top of body
@@ -27,9 +29,12 @@ $(document).ready(function() {
     $(this).scrollTop(0);
   });
 
+
   $('.scroll-down').click (function() {
     $('html, body').animate({scrollTop: $('.video-gallery').offset().top }, 'slow');
     return false;
   });
+
+
 
   })();

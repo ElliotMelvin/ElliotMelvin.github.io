@@ -316,24 +316,6 @@ background: #333;
    float: left;
  }
 
-  /*
-  These keep the height of each video thumbnail consistent between YouTube and Vimeo.
-  Each can have thumbnail sizes that vary by 1px and are likely break your layout.
-  */
-
- .video figure {
-   height: 0;
-   padding-bottom: 56.25%;
-   overflow: hidden;
-
-   .video figure a {
-     display: block;
-     margin: 0;
-     padding: 0;
-     border: none;
-     line-height: 0;
-   }
- }
 
  /* Media Queries - This is the responsive grid. */
 

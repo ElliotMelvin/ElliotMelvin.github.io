@@ -271,6 +271,17 @@ html {
 /* -----------------  End of Full screen video -----------------*/
 
 /* -----------------  Video gallery -----------------*/
+
+a {
+  outline:none !important;
+}
+.popup-youtube {
+.youtube-click {
+    outline:none;
+    width: 50px;
+    heignt: 50px;
+  }
+}
 .video-container {
   display: inline-block;
 }

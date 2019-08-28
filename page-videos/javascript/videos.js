@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+
   // remove underline on selected page on navbar
   $(".nav-link").on('mouseenter', function() {
       $('.homepage-link').removeClass('active-link');
@@ -29,12 +31,17 @@ $(document).ready(function() {
     $(this).scrollTop(0);
   });
 
-
   $('.scroll-down').click (function() {
     $('html, body').animate({scrollTop: $('.video-gallery').offset().top }, 'slow');
     return false;
   });
-
+  $(document).ready(function() {
+      $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+          type: 'iframe',
+          mainClass: 'mfp-fade',
+          preloader: true,
+      });
+  });
 
 
   })();

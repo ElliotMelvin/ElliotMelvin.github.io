@@ -271,14 +271,13 @@ html {
 /* -----------------  End of Full screen video -----------------*/
 
 /* -----------------  Video gallery -----------------*/
-
-.video-container{
-  width: 100%;
-    height: 1000px;
+.video-container {
+  display: inline-block;
 }
+
 .video-gallery{
-  height: 90%;
-background: #333333;
+  height: 100%;
+background: #333;
 
 }
 .video-gallery p{
@@ -291,7 +290,7 @@ background: #333333;
 }
 /* First make sure the video thumbnail images are responsive. */
 
- img {
+ .video img {
    max-width: 100%;
    height: auto;
  }
@@ -342,9 +341,7 @@ background: #333333;
    .video {
      width: 96%; /* Thumbnails 1 across */
    }
-   .video-gallery {
-height: 80%;
-      }
+
  }
 
  @media (max-width: 360px) {
@@ -356,43 +353,7 @@ height: 80%;
    }
  }
 
- @media (max-height: 1366px ){
-   .video-gallery {
-     height: 93%;
-   }
- }
 
- @media (max-height: 823px ){
-   .video-gallery {
-     height: 83%;
-   }
- }
-
-
- @media (max-height: 812px ){
-   .video-gallery {
-     height: 83%;
-   }
- }
-
-
-@media (max-height: 736px ){
-  .video-gallery {
-    height: 81%;
-  }
-}
-
-@media (max-height: 667px ){
-  .video-gallery {
-    height: 79%;
-  }
-}
-
-@media (max-height: 568px ){
-  .video-gallery {
-    height: 72%;
-  }
-}
  /* These are my preferred rollover styles. */
 
  .video img {

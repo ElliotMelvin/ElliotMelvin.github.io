@@ -271,17 +271,13 @@ html {
 /* -----------------  End of Full screen video -----------------*/
 
 /* -----------------  Video gallery -----------------*/
+.mfp-title {
+  position:absolute;
+  color: #FFF;
+font-size: 25px;
+line-height: 25px;
+}
 
-a {
-  outline:none !important;
-}
-.popup-youtube {
-.youtube-click {
-    outline:none;
-    width: 50px;
-    heignt: 50px;
-  }
-}
 .video-container {
   display: inline-block;
 }

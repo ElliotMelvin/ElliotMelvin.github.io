@@ -570,7 +570,7 @@ h3 {
   background: #333333;
   margin: 0;
   overflow: hidden;
-  padding-bottom: 50px;
+  padding-bottom: 56px;
   text-align: center;
 }
 
@@ -661,7 +661,7 @@ img {
   height: auto;
   background: #333333;
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 41px;
 }
 
 .social-media-container p {
@@ -737,7 +737,7 @@ border-radius: 36px;
 }
 
 .box2-right {
-  /*border: 1px solid red;*/
+
   display: inline-block;
   width: auto;
   height: auto;

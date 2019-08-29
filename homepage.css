@@ -11,8 +11,7 @@ html, body {
   src: url(../ElliotMelvin.github.io/assests/fonts/LemonMilkitalic.otf);
 }
 
-html {
-
+body {
   overflow-x: hidden;
   scrollbar-width: none; // Firefox
   -ms-overflow-style: none;
@@ -20,7 +19,6 @@ html {
 ::-webkit-scrollbar {
     display: none;
 }
-
 
 /* -----------------  End of Body -----------------*/
 /* -----------------  Navbar -----------------*/

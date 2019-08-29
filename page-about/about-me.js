@@ -24,7 +24,10 @@ $(document).ready(function() {
 
   // when page is reloaded it will take user to the top
   $(document).ready(function() {
-    $(this).scrollTop(0);
+    setTimeout( function () {
+    $('body, html').stop().animate({ scrollTop: 0 }, 100);
+}, 500);
+
   });
 
   })();

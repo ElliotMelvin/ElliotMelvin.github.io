@@ -12,7 +12,7 @@ html, body {
   src: url(../assests/fonts/LemonMilkitalic.otf);
 }
 
-html {
+body {
   overflow: hidden;
   overflow-x: hidden;
   scrollbar-width: none; // Firefox

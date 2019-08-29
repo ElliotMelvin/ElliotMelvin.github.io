@@ -25,16 +25,19 @@ $(document).ready(function() {
     }, 500);
   });
 
-
   // when page is reloaded it will take user to the top
   $(document).ready(function() {
-    $(this).scrollTop(0);
+    setTimeout( function () {
+    $('body, html').stop().animate({ scrollTop: 0 }, 100);
+}, 500);
+
   });
 
   $('.scroll-down').click (function() {
     $('html, body').animate({scrollTop: $('.video-gallery').offset().top }, 'slow');
     return false;
   });
+
   $(document).ready(function() {
       $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
           type: 'iframe',
@@ -63,7 +66,7 @@ $(document).ready(function() {
     }
 
     });
-    
+
   });
 
   })();

@@ -1123,7 +1123,7 @@ $(document).ready(function() {
       }
 
     });
-    if ($(window).width() < 960) {
+    if ($(window).width() < 500) {
         $('.image-popup-vertical-fit').off('click');
       $('.image-popup-vertical-fit').removeAttr('href');
 

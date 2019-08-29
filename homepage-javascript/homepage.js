@@ -1025,12 +1025,12 @@ $(document).ready(function() {
   $('input[type="checkbox"]').click(function() {
     if ($(this).is(":checked")) {
       $(".heading-container").hide();
-      $(".arrow-container").hide();
-      $(".ism-radios").hide();
+      $(".scroll-down").hide();
+
     } else {
       $(".heading-container").show();
-      $(".arrow-container").show();
-      $(".ism-radios").show();
+      $(".scroll-down").show();
+
     }
   });
 

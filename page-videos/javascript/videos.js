@@ -43,7 +43,15 @@ $(document).ready(function() {
           type: 'iframe',
           mainClass: 'mfp-fade',
           preloader: true,
-
+          iframe: {
+                 patterns: {
+                    youtube: {
+                       index: 'youtube.com/',
+                       id: 'v=',
+                       src: 'http://www.youtube.com/embed/%id%?autoplay=1'
+                   }
+                 }
+             }
       });
   });
 

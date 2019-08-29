@@ -20,6 +20,9 @@ html {
     display: none;
 }
 
+.disabledLink{
+  pointer-events: none;
+}
 /* -----------------  End of Body -----------------*/
 /* -----------------  Navbar -----------------*/
 .nav-link {

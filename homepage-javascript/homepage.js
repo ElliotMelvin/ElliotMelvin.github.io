@@ -1063,9 +1063,11 @@ $(document).ready(function() {
 
   // when page is reloaded it will take user to the top
   $(document).ready(function() {
-    setTimeout( function () {
-    $('body, html').stop().animate({ scrollTop: 0 }, 100);
-}, 500);
+    setTimeout(function() {
+      $('body, html').stop().animate({
+        scrollTop: 0
+      }, 100);
+    }, 500);
 
   });
 
@@ -1082,43 +1084,50 @@ $(document).ready(function() {
 
   });
 
-// remove underline on selected page on navbar
-$(".nav-link").on('mouseenter', function() {
+  // remove underline on selected page on navbar
+  $(".nav-link").on('mouseenter', function() {
     $('.homepage-link').removeClass('active-link');
-});
-$(".nav-link").on('mouseleave', function() {
-      $('.homepage-link').addClass('active-link');
-});
+  });
+  $(".nav-link").on('mouseleave', function() {
+    $('.homepage-link').addClass('active-link');
+  });
 
 
-   $('.scroll-down').click (function() {
-     $('html, body').animate({scrollTop: $('#section1').offset().top }, 'slow');
-     return false;
-   });
+  $('.scroll-down').click(function() {
+    $('html, body').animate({
+      scrollTop: $('#section1').offset().top
+    }, 'slow');
+    return false;
+  });
 
 
-   $(document).ready(function(){
-   $('.image-popup-vertical-fit').magnificPopup({
-   	type: 'image',
-     mainClass: 'mfp-with-zoom',
-     gallery:{
-   			enabled:true
-   		},
+  $(document).ready(function() {
+    $('.image-popup-vertical-fit').magnificPopup({
+      type: 'image',
+      mainClass: 'mfp-with-zoom',
+      gallery: {
+        enabled: true
+      },
 
-     zoom: {
-       enabled: true,
+      zoom: {
+        enabled: true,
 
-       duration: 300, // duration of the effect, in milliseconds
-       easing: 'ease-in-out', // CSS transition easing function
+        duration: 300, // duration of the effect, in milliseconds
+        easing: 'ease-in-out', // CSS transition easing function
 
-       opener: function(openerElement) {
+        opener: function(openerElement) {
 
-         return openerElement.is('img') ? openerElement : openerElement.find('img');
-     }
-   }
+          return openerElement.is('img') ? openerElement : openerElement.find('img');
+        }
 
-   });
+      }
 
-   });
+    });
+    if ($(window).width() < 960) {
+        $('.image-popup-vertical-fit').off('click');
+      $('.image-popup-vertical-fit').removeAttr('href');
+
+      }
+  });
 
 })();
